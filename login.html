@@ -27,37 +27,138 @@
 
 </head>
 <body>
-        <div class="container">
-            <div class="row">
-                    <form >
-
-                        <div class="col-12 centralizar pt-5">
-                        <h1 >Mercadinhx</h1>
-                        </div>
-                        <div class="col-12 centralizar">
-                        <h4 >Entre na sua conta</h4>
-                        </div>
-                        <div class="col-12 centralizar">
-                        <div class="form-row">
-                            <div class="col-12">
-                                <input type="email" placeholder="Seu email" class="form-control my-3 p-2">
-                                <input type="password" placeholder="*******" class="form-control my-3 p-2">
-                                <button type="button " class="btn1 mt-3 mb-3">Entrar</button>
-
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="col-12 centralizar">
-                            <a href="#">Esqueceu sua senha?</a>
-                        </div>
-                        <div class="col-12 centralizar">
-                            <p>Não possui uma conta? <a href="#">Crie uma aqui.</a> </p>
-                        </div>
-                    </form >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-3">
+            <a href="#" class="navbar-brand primary-color">
+                <img src="img/mercado.jpg" alt="Mercado">
+                <span>Mercadinhx</span>
+            </a>
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target = "#navbar-items"   
+                    aria-controls="navbar-items"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active primary-color" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link primary-color" aria-current="page">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link primary-color" aria-current="page">Login</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
+    <div class="container">
+        <div class="row">
+                <form >
+
+                    <div class="col-12 centralizar pt-5">
+                    <h1 >Mercadinhx</h1>
+                    </div>
+                    <div class="col-12 centralizar">
+                    <h4 >Entre na sua conta</h4>
+                    </div>
+                    <div class="col-12 centralizar">
+                    <div class="form-row">
+                        <div class="col-12">
+                            <input type="email" placeholder="Seu email" class="form-control my-3 p-2">
+                            <input type="password" placeholder="*******" class="form-control my-3 p-2">
+                            <button type="button " class="btn1 mt-3 mb-3">Entrar</button>
+
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-12 centralizar">
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+                    <div class="col-12 centralizar">
+                        <p>Não possui uma conta? <a href="#">Crie uma aqui.</a> </p>
+                    </div>
+                </form >
+        </div>
+    </div>
+
+
+        <!-- FOOTER -->
+        <footer class="container-fluid bg-dark-color" id="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- FOOTER TOP -->
+                    <div class="col-12" id="footer-top">
+                        <div class="row justify-content-between">
+                            <div class="col-4"><h2>Mercadinhx</h2></div>
+                            <div class="col-4 icons" id="social">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FOOTER DATAILS-->
+                    <div class="col-12" id="footer-details">
+                        <div class="row">
+                            <div class="col-12 col-md-4" id="news-container">
+                                <h4>Fique por dentro das novidades</h4>
+                                <p class="secondary-color">Inscreva-se para saber em primeira mão</p>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Digite o seu e-mail">
+                                    </div>
+                                    <button class="btn btn-dark" type="submit">Inscrever</button>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-4" id="contact-container">
+                                <h4>Formas de contato</h4>
+                                <p class="secondary-color"> (xx)xxxx-xxxx</p>
+                                <p class="secondary-color"> contato@mercadinhx.com</p>
+                                <a href="#" class="secondary-color">Fale conosco</a>
+                            </div>
+                            <div class="col-12 col-md-4" id="links-container">
+                                <div class="row">
+                                    <h4>Colaboradores <i class="bi bi-heart"></i> :</h4>
+                                    
+                                    <div class="col-12">
+                                        <ul class="list-unstyled">
+                                            <li><p class="secondary-color">Bruno Pereira Fornaro</p></li>
+                                            <li><p class="secondary-color">Daniel Ambrosim Falqueto</p></li>
+                                            <li><p class="secondary-color">Lorenzo Aguiar de Alencastro Guimarães</p></li>
+                                            <li><p class="secondary-color">Vanessa Berwanger Wille</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FOOTER BOTTOM -->
+                    <div class="col-12" id="footer-bottom">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-md-3">
+                                <p class="secondary-color">Mercadinhx &copy; 2021</p>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <p class="secondary-color">
+                                    <a href="#" class="secondary-color">Quem somos</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
 
 
 

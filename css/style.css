@@ -378,6 +378,13 @@
 }
 
 
+.img_login {
+    width: 10%;
+    height: 10%;
+}
+
+
+/*Centralização*/
 .centralizar {
     display: flex;
     align-items: center;
