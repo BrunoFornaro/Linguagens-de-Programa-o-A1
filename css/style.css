@@ -359,9 +359,32 @@
 }
 
 
+/*Botão login*/
+.btn1 {
+    border:none;
+    outline: none;
+    height: 50px;
+    width: 350px;
+    background-color: rgb(255, 115, 0);
+    color:white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn1:hover {
+    background: white;
+    border: 1px solid;
+    color:rgb(255, 115, 0);
+}
 
 
+.centralizar {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
 
+}
 
 
 
