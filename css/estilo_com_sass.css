@@ -206,10 +206,63 @@ body {
 
 .imagem-assinatura {
   padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagem-assinatura img {
   width: 100%;
+}
+
+/* BANNER COM TRASPARENCIA */
+#featured-images {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#featured-images .col-md-3 {
+  position: relative;
+  cursor: pointer;
+}
+#featured-images .col-md-3:hover > .banner-content {
+  opacity: 0.8;
+}
+#featured-images .col-12 {
+  position: relative;
+  cursor: pointer;
+}
+#featured-images .col-12:hover > .banner-content {
+  opacity: 0.9;
+}
+#featured-images .banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+#featured-images .banner-content a {
+  color: #F2F2F2;
+}
+#featured-images .banner-content a:hover {
+  color: #FFDB4F;
+}
+#featured-images img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #featured-images .banner-content {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=estilo_com_sass.css.map */
