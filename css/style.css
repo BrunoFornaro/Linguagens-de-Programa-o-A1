@@ -501,7 +501,11 @@ body {
     text-align: justify;
 }
 
-
+/* LISTA DE PRODUTOS */
+.navbar-produtos a {
+    border: 1px solid black;
+    border-radius: 7px;
+}
 
 
 
