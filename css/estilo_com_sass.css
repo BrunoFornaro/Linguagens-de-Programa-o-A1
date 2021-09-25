@@ -264,5 +264,31 @@ body {
     opacity: 0;
   }
 }
+/* LOGIN */
+.botao_laranja {
+  outline: none;
+  height: 50px;
+  width: 350px;
+  background-color: #FF962B;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.botao_laranja:hover {
+  background: white;
+  border: 1px solid;
+  color: #FF4009;
+}
+
+.imagem_login {
+  width: 12%;
+  height: 12%;
+}
+
+.centralizar {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=estilo_com_sass.css.map */
