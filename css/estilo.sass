@@ -1,6 +1,204 @@
-$font-stack:    Helvetica, sans-serif
-$primary-color: #333
+/* Variáveis Padrão para o Site */
+// Paleta de cores 
+$gesso: #F2F2F2
+$amarelo: #FFDB4F
+$laranja: #FF962B
+$vermelho: #FF4009
+$verde-escuro: #27430D
+$branco: white
+$preto: black
+
+
+
+/* Estilos Padrão para o Site */
+*
+  font-family: 'Open Sans', sans-serif
 
 body
-  font: 100% $font-stack
-  color: $primary-color
+  background-color: $gesso
+
+.primeira-cor
+  color: $preto
+
+.segunda-cor
+  color: $gesso
+
+.primeiro-fundo
+  color: $preto
+  background-color: $gesso
+
+.segundo-fundo
+  color: $gesso
+  background-color: $preto
+
+.segundo-fundo 
+  a
+    color: $gesso
+  a:hover
+    color: $amarelo
+
+.container-fluid 
+    padding: 0em
+
+/* CABEÇALHO */
+.cabecalho 
+  background-color: $laranja
+  border-bottom: 1px
+  border-bottom-style: solid
+  border-bottom-color: gray
+  margin-bottom: 1em
+
+.cabecalho
+  a
+    color: $preto
+  a:hover
+    color: lightgray
+  a:active 
+    border-bottom: 1px
+    border-bottom-style: solid
+    border-bottom-color: black
+
+#navbar-items 
+  .navbar-nav 
+    display: flex
+    justify-content: center
+    width: 100%
+
+  .nav-item 
+    display: flex
+    justify-content: center
+    width: 100%
+    font-size: 1.4em
+
+.navbar-brand 
+    display: flex
+    justify-content: center
+
+.navbar-brand 
+  img 
+    width: 80px
+
+  span 
+    font-weight: 700
+    font-size: 1.5em
+    margin-left: 0.5em
+
+.nav-item 
+  a 
+    display: flex
+    justify-content: right
+  
+  input 
+    border-radius: 30px
+  
+  button 
+    border: 0
+
+
+
+/* RODAPÉ */
+#rodape 
+    padding: 3em
+
+#rodape
+  a:hover 
+    color: $amarelo
+
+/* RODAPÉ PARTE DE CIMA */
+#rodape-cima 
+    margin-bottom: 3em
+
+#rodape-cima
+  col-12
+    border: 0em
+    margin-bottom: 2em
+
+  input 
+    border-radius: 0
+    border: none
+
+  li 
+    margin-bottom: 0.3em
+  
+  h4 
+    color: white
+    margin-bottom: 1.5em
+  
+  i 
+    color: $vermelho
+
+/* RODAPÉ PARTE DE BAIXO */
+#rodape-baixo 
+    text-align: center
+    border-top: 1px solid gray
+    padding-top: 2em
+
+#rodape-baixo 
+  i:hover 
+    color: $amarelo
+
+@media(min-width: 768px) 
+  #rodape-cima
+    .coluna-rodape-cima
+      padding-left: 2em
+      padding-right: 2em
+      
+  #rodape-cima-centro 
+    padding-left: 2em
+    padding-right: 2em
+    border-left: 1px solid $gesso
+    border-right: 1px solid $gesso
+    
+/* ASSINATURA PRO*/
+.fundo-amarelo
+  background-color: $amarelo
+
+.tipos-de-assinatura 
+    font-size: 1.2em
+    text-align: justify
+
+.explicacoes 
+    font-size: 0.8em
+    text-align: center
+
+.explicacoes 
+  .col-md-10 
+    padding-top: 1em
+  
+  .col-12 
+    padding-top: 1em
+    padding-bottom: 2.5em
+
+.conteiner-assinatura 
+    margin-bottom: 1em
+
+
+.conteiner-assinatura 
+  .col-12 
+    padding-left: 5em
+    padding-right: 5em
+
+  .titulo 
+    text-align: center
+    padding-top: 1.5em
+    padding-bottom: 0.5em
+
+.row-tipos-assinatura
+  .col-12
+      padding-left: 2em
+      padding-right: 2em
+
+.row-tipos-assinatura
+  .titulo
+    padding-top: 1em
+    padding-bottom: 0.5em
+
+#conteiner-tipos-de-assinatura
+  margin-bottom: 1em
+
+.imagem-assinatura
+  padding-left: 0
+
+.imagem-assinatura
+  img
+    width: 100%

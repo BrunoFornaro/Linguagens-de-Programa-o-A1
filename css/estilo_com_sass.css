@@ -1,6 +1,215 @@
+@charset "UTF-8";
+/* Variáveis Padrão para o Site */
+/* Estilos Padrão para o Site */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
 body {
-  font: 100% Helvetica, sans-serif;
-  color: #333;
+  background-color: #F2F2F2;
+}
+
+.primeira-cor {
+  color: black;
+}
+
+.segunda-cor {
+  color: #F2F2F2;
+}
+
+.primeiro-fundo {
+  color: black;
+  background-color: #F2F2F2;
+}
+
+.segundo-fundo {
+  color: #F2F2F2;
+  background-color: black;
+}
+
+.segundo-fundo a {
+  color: #F2F2F2;
+}
+.segundo-fundo a:hover {
+  color: #FFDB4F;
+}
+
+.container-fluid {
+  padding: 0em;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+  background-color: #FF962B;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+  margin-bottom: 1em;
+}
+
+.cabecalho a {
+  color: black;
+}
+.cabecalho a:hover {
+  color: lightgray;
+}
+.cabecalho a:active {
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+#navbar-items .navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#navbar-items .nav-item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.4em;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand img {
+  width: 80px;
+}
+.navbar-brand span {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+}
+
+.nav-item a {
+  display: flex;
+  justify-content: right;
+}
+.nav-item input {
+  border-radius: 30px;
+}
+.nav-item button {
+  border: 0;
+}
+
+/* RODAPÉ */
+#rodape {
+  padding: 3em;
+}
+
+#rodape a:hover {
+  color: #FFDB4F;
+}
+
+/* RODAPÉ PARTE DE CIMA */
+#rodape-cima {
+  margin-bottom: 3em;
+}
+
+#rodape-cima col-12 {
+  border: 0em;
+  margin-bottom: 2em;
+}
+#rodape-cima input {
+  border-radius: 0;
+  border: none;
+}
+#rodape-cima li {
+  margin-bottom: 0.3em;
+}
+#rodape-cima h4 {
+  color: white;
+  margin-bottom: 1.5em;
+}
+#rodape-cima i {
+  color: #FF4009;
+}
+
+/* RODAPÉ PARTE DE BAIXO */
+#rodape-baixo {
+  text-align: center;
+  border-top: 1px solid gray;
+  padding-top: 2em;
+}
+
+#rodape-baixo i:hover {
+  color: #FFDB4F;
+}
+
+@media (min-width: 768px) {
+  #rodape-cima .coluna-rodape-cima {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  #rodape-cima-centro {
+    padding-left: 2em;
+    padding-right: 2em;
+    border-left: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+  }
+}
+/* ASSINATURA PRO*/
+.fundo-amarelo {
+  background-color: #FFDB4F;
+}
+
+.tipos-de-assinatura {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.explicacoes {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.explicacoes .col-md-10 {
+  padding-top: 1em;
+}
+.explicacoes .col-12 {
+  padding-top: 1em;
+  padding-bottom: 2.5em;
+}
+
+.conteiner-assinatura {
+  margin-bottom: 1em;
+}
+
+.conteiner-assinatura .col-12 {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+.conteiner-assinatura .titulo {
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.row-tipos-assinatura .col-12 {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.row-tipos-assinatura .titulo {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+#conteiner-tipos-de-assinatura {
+  margin-bottom: 1em;
+}
+
+.imagem-assinatura {
+  padding-left: 0;
+}
+
+.imagem-assinatura img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=estilo_com_sass.css.map */

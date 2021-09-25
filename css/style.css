@@ -27,7 +27,7 @@ body {
 }
 
 .bg-secondary-color {
-    background-color: #FFDB4F;
+    background-color: #ccc7b4;
 }
 
 .bg-dark-color {
@@ -235,6 +235,7 @@ body {
     font-size: 1.75em;
     margin-bottom: 0.4em;
     position: relative;
+    font-weight: bold;
 }
 
 /*.title:before {
@@ -505,6 +506,7 @@ body {
 .navbar-produtos a {
     border: 1px solid black;
     border-radius: 7px;
+    
 }
 
 
