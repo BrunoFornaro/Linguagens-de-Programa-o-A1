@@ -117,6 +117,9 @@ body {
     line-height: 1.5;
     margin-bottom: 20px;
     margin-top: 10px;
+    text-align: justify;
+    text-justify: auto;
+    
 }
 
 #bio-images .img {
