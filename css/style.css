@@ -80,7 +80,7 @@ body {
     justify-content: right;
 }
 
-/* Text container */
+/* Bio container */
 
 #bio-text h2 {
     color: rgb(99, 99, 99);
@@ -102,9 +102,9 @@ body {
 
 #bio-images .img {
     float: left;
-    width: 600px;
-    height: 600px;
-    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    object-fit: fill;
 }
 
 /* SLIDER */
