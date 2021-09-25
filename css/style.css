@@ -91,6 +91,14 @@ body {
     justify-content: right;
 }
 
+.nav-item input {
+    border-radius: 30px;
+}
+
+.nav-item button {
+    border: 0;
+}
+
 /* Bio container */
 
 #bio-text h2 {
@@ -117,6 +125,8 @@ body {
     height: 150px;
     object-fit: fill;
 }
+
+
 
 /* SLIDER */
 #slider {
