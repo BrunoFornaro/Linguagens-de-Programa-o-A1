@@ -91,6 +91,32 @@ body {
     justify-content: right;
 }
 
+/* Bio container */
+
+#bio-text h2 {
+    color: rgb(99, 99, 99);
+    text-decoration: underline;
+    text-decoration-color: rgb(212, 119, 12);
+    font-size: 25x;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#bio-text p {
+    color: rgb(99, 99, 99);
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#bio-images .img {
+    float: left;
+    width: 200px;
+    height: 150px;
+    object-fit: fill;
+}
 
 /* SLIDER */
 #slider {
@@ -445,6 +471,13 @@ body {
 }
 
 
+.img_login {
+    width: 12%;
+    height: 12%;
+}
+
+
+/*Centralização*/
 .centralizar {
     display: flex;
     align-items: center;
@@ -452,6 +485,10 @@ body {
     justify-content: center;
 
 }
+
+
+
+
 
 
 
