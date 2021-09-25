@@ -502,6 +502,20 @@ body {
     text-align: justify;
 }
 
+
+.escrita_centro {
+    text-align: center;
+}
+
+
+.borda_figura {
+    width:350px;
+    height:275px;
+    border:4px solid #999;
+    background:transparent;
+} 
+
+
 /* LISTA DE PRODUTOS */
 .navbar-produtos a {
     border: 1px solid black;
