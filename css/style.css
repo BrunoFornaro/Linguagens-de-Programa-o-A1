@@ -492,6 +492,17 @@ body {
 }
 
 
+.escrita_centro {
+    text-align: center;
+}
+
+
+.borda_figura {
+    width:350px;
+    height:275px;
+    border:4px solid #999;
+    background:transparent;
+} 
 
 
 
