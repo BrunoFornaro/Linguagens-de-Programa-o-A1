@@ -1,26 +1,37 @@
+/* PALETA DE CORES 
+#F2F2F2 GESSO
+#FFDB4F AMARELO
+#FF962B LARANJA
+#FF4009 VERMELHO
+#27430D VERDE ESCURO
+
+
+
+*/
+
 *{
     font-family: 'Open Sans', sans-serif;
 }
-/*
+
 body {
-    background-color: lightblue;
+    background-color: #F2F2F2;
 }
-*/
+
 
 .container-fluid {
     padding: 0em;
 }
 
 .bg-primary-color {
-    background-color: lightblue;
+    background-color: #FF962B;
 }
 
 .bg-secondary-color {
-    background-color: rgb(219, 70, 70);
+    background-color: #FFDB4F;
 }
 
 .bg-dark-color {
-    background-color: black;
+    background-color: #1E0900;
 }
 
 .primary-color {
@@ -109,7 +120,7 @@ body {
 
 /* SLIDER */
 #slider {
-    margin-top: 8em;
+    margin-top: 0em;
     margin-bottom: 1em;
 }
 
@@ -237,14 +248,16 @@ body {
     opacity: 0.8;
 }
 
-#featured-images .promocoes {
+#featured-images .col-12 {
     position: relative;
     cursor: pointer;
 }
 
-#featured-images .promocoes:hover > .banner-content {
+#featured-images .col-12:hover > .banner-content {
     opacity: 0.8;
 }
+
+
 
 #featured-images .banner-content {
     position: absolute;
@@ -367,7 +380,7 @@ body {
     padding-top: 2em;
 }
 #footer-details i {
-    color: red;
+    color: #FF4009;
     margin-left: 0.3em;
 }
 
@@ -392,8 +405,37 @@ body {
 
 .tipos-de-assinatura {
     font-size: 1.2em;
+    text-align: justify;
 }
 
+.explicacoes {
+    font-size: 0.8em;
+    line-height: 0.8em;
+    text-align: center;
+}
+.explicacoes .col-md-10 {
+    padding-top: 1em;
+}
+
+.explicacoes .col-12 {
+    padding-top: 1em;
+    padding-bottom: 3.5em;
+}
+
+.conteiner-assinatura {
+    margin-bottom: 1em;
+}
+
+.conteiner-assinatura .col-12 {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.conteiner-assinatura .title {
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+}
 
 
 /* TESTES*/
@@ -416,7 +458,7 @@ body {
     outline: none;
     height: 50px;
     width: 350px;
-    background-color: rgb(255, 115, 0);
+    background-color: #FF962B;
     color:white;
     border-radius: 4px;
     font-weight: bold;
@@ -425,7 +467,7 @@ body {
 .btn1:hover {
     background: white;
     border: 1px solid;
-    color:rgb(255, 115, 0);
+    color:#FF4009;
 }
 
 
