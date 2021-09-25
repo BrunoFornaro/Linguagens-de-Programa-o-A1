@@ -291,4 +291,16 @@ body {
   justify-content: center;
 }
 
+#termos {
+  font-size: 0.8em;
+}
+
+#fale-conosco {
+  margin-bottom: 4em;
+}
+
+#fale-conosco h6 {
+  text-align: justify;
+}
+
 /*# sourceMappingURL=estilo_com_sass.css.map */
