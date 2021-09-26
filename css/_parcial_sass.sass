@@ -1,0 +1,53 @@
+/* Variáveis Padrão para o Site */
+// Paleta de cores 
+$gesso: #F2F2F2
+$amarelo: #FFDB4F
+$laranja: #FF962B
+$vermelho: #FF4009
+$verde-escuro: #27430D
+$branco: white
+$preto: black
+
+/* Estilos Padrão para o Site */
+*
+  font-family: 'Open Sans', sans-serif
+
+body
+  background-color: $gesso
+
+.primeira-cor
+  color: $preto
+
+.segunda-cor
+  color: $gesso
+
+.primeiro-fundo
+  color: $preto
+  background-color: $gesso
+
+.segundo-fundo
+  color: $gesso
+  background-color: $preto
+
+.segundo-fundo 
+  a
+    color: $gesso
+  a:hover
+    color: $amarelo
+
+.container-fluid 
+    padding: 0em
+
+.justificar
+    text-align: justify
+
+/* EXTEND */
+%centralizar_item
+    display: flex
+    align-items: center
+    justify-content: center
+
+%centralizar
+    display: flex  
+    align-items: center
+    justify-content: center

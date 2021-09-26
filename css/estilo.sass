@@ -1,51 +1,10 @@
-/* Variáveis Padrão para o Site */
-// Paleta de cores 
-$gesso: #F2F2F2
-$amarelo: #FFDB4F
-$laranja: #FF962B
-$vermelho: #FF4009
-$verde-escuro: #27430D
-$branco: white
-$preto: black
+@use 'parcial_sass'
 
 
-
-/* Estilos Padrão para o Site */
-*
-  font-family: 'Open Sans', sans-serif
-
-body
-  background-color: $gesso
-
-.primeira-cor
-  color: $preto
-
-.segunda-cor
-  color: $gesso
-
-.primeiro-fundo
-  color: $preto
-  background-color: $gesso
-
-.segundo-fundo
-  color: $gesso
-  background-color: $preto
-
-.segundo-fundo 
-  a
-    color: $gesso
-  a:hover
-    color: $amarelo
-
-.container-fluid 
-  padding: 0em
-
-.justificar
-  text-align: justify
 
 /* CABEÇALHO */
 .cabecalho 
-  background-color: $laranja
+  background-color: parcial_sass.$laranja
   border-bottom: 1px
   border-bottom-style: solid
   border-bottom-color: gray
@@ -53,29 +12,26 @@ body
 
 .cabecalho
   a
-    color: $preto
+    color: parcial_sass.$preto
   a:hover
-    color: $gesso
+    color: parcial_sass.$gesso
   a:active 
     border-bottom: 1px
     border-bottom-style: solid
-    border-bottom-color: $gesso
+    border-bottom-color: parcial_sass.$gesso
 
 #navbar-items 
   .navbar-nav 
-    display: flex
-    justify-content: center
+    @extend %centralizar
     width: 100%
 
   .nav-item 
-    display: flex
-    justify-content: center
+    @extend %centralizar
     width: 100%
     font-size: 1.4em
 
 .navbar-brand 
-  display: flex
-  justify-content: center
+  @extend %centralizar
 
 .navbar-brand 
   img 
@@ -96,11 +52,11 @@ body
   
   button 
     border: 0
-    color: $preto
+    color: parcial_sass.$preto
   
   button:hover
-    background-color: $amarelo
-    color: $preto
+    background-color: parcial_sass.$amarelo
+    color: parcial_sass.$preto
 
 
 
@@ -110,7 +66,7 @@ body
 
 #rodape
   a:hover 
-    color: $amarelo
+    color: parcial_sass.$amarelo
 
 /* RODAPÉ PARTE DE CIMA */
 #rodape-cima 
@@ -133,7 +89,7 @@ body
     margin-bottom: 1.5em
   
   i 
-    color: $vermelho
+    color: parcial_sass.$vermelho
 
 /* RODAPÉ PARTE DE BAIXO */
 #rodape-baixo 
@@ -143,7 +99,7 @@ body
 
 #rodape-baixo 
   i:hover 
-    color: $amarelo
+    color: parcial_sass.$amarelo
 
 @media(min-width: 768px) 
   #rodape-cima
@@ -154,12 +110,12 @@ body
   #rodape-cima-centro 
     padding-left: 2em
     padding-right: 2em
-    border-left: 1px solid $gesso
-    border-right: 1px solid $gesso
+    border-left: 1px solid parcial_sass.$gesso
+    border-right: 1px solid parcial_sass.$gesso
     
 /* ASSINATURA PRO*/
 .fundo-amarelo
-  background-color: $amarelo
+  background-color: parcial_sass.$amarelo
 
 .tipos-de-assinatura 
   font-size: 1.2em
@@ -206,9 +162,7 @@ body
 
 .imagem-assinatura
   padding-left: 0
-  display: flex
-  justify-content: center
-  align-items: center
+  @extend %centralizar_item
 
 .imagem-assinatura
   img
@@ -242,19 +196,17 @@ body
     height: 100%
     width: 100%
     background-color: white
-    display: flex
-    justify-content: center
-    align-items: center
+    @extend %centralizar_item
     flex-direction: column
     opacity: 0.6
     transition: 0.5s
 
   .banner-content
     a
-      color: $gesso
+      color: parcial_sass.$gesso
 
     a:hover
-      color: $amarelo
+      color: parcial_sass.$amarelo
 
   img 
     width: 100%
@@ -272,13 +224,13 @@ body
   outline: none
   height: 50px
   width: 350px
-  background-color: $laranja
+  background-color: parcial_sass.$laranja
   color:white
   border-radius: 4px
   font-weight: bold
 
 .botao_laranja:hover 
-  background: $branco
+  background: parcial_sass.$branco
   border: 1px solid
   color:#FF4009
 
@@ -287,10 +239,7 @@ body
   height: 12%
 
 .centralizar 
-  display: flex
-  align-items: center
-  justify-items: center
-  justify-content: center
+  @extend %centralizar_item
 
 #termos
   font-size: 0.8em
@@ -308,7 +257,7 @@ body
 #quem-somos 
   h2 
     text-decoration: underline
-    text-decoration-color: $laranja
+    text-decoration-color: parcial_sass.$laranja
     margin-bottom: 0.5em
 
   p 
@@ -341,15 +290,15 @@ body
     margin-bottom: 1em
 
 .carousel-control-prev i
-    color: $preto
+    color: parcial_sass.$preto
     font-size: 4em
 
 .carousel-control-next i 
-    color: $preto
+    color: parcial_sass.$preto
     font-size: 4em
 
 .carousel-indicators [data-bs-target] 
-    background-color: $preto
+    background-color: parcial_sass.$preto
     opacity: 0.8
 
 .carousel-item img 
@@ -362,7 +311,7 @@ body
 
 .btn-outline-success
   h3
-    color: $preto
+    color: parcial_sass.$preto
     text-align: center
 
 
@@ -373,10 +322,10 @@ body
   .nav-link 
     border: 1px solid black
     border-radius: 7px
-    color: $preto
+    color: parcial_sass.$preto
   
 .navbar-produtos .nav-link:hover
-  background-color: $amarelo
+  background-color: parcial_sass.$amarelo
 
 .lista-de-produtos
   .btn-outline-success
@@ -385,13 +334,13 @@ body
 
   .btn-outline-success
     h1
-      color: $preto
+      color: parcial_sass.$preto
       text-align: center
 
 .navbar-filtro
-  color: $preto
+  color: parcial_sass.$preto
   margin-top: 1em
-  background-color: $laranja
+  background-color: parcial_sass.$laranja
   border-radius: 15px
     
 .navbar-filtro
@@ -401,20 +350,18 @@ body
     margin-bottom: 0
   
   .control-prev, .control-next 
-    background-color: $amarelo
+    background-color: parcial_sass.$amarelo
     
 /* PRODUTOS */
 .imagem-produtos
   padding-left: 0
-  display: flex
-  justify-content: center
-  align-items: center
+  @extend %centralizar_item
 
 .imagem-produtos
   img
     max-height: 22em
     max-width: 100%
-    border: 1px solid $laranja
+    border: 1px solid parcial_sass.$laranja
 
 .titulo-mensagem-produto
   .col-11
@@ -422,15 +369,13 @@ body
     padding-bottom: 1em
 
 .botao-mensagem-produto
-  display: flex
-  justify-content: center
+  @extend %centralizar
   margin-top: 1em
   margin-bottom: 2em
 
 .informacoes-produto
   .col-md-10
     padding-bottom: 2em
-
 
 
 

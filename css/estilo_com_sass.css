@@ -42,6 +42,19 @@ body {
   text-align: justify;
 }
 
+/* EXTEND */
+.imagem-assinatura, #featured-images .banner-content, .centralizar, .imagem-produtos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar-items .navbar-nav, #navbar-items .nav-item, .navbar-brand, .botao-mensagem-produto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* CABEÇALHO */
 .cabecalho {
   background-color: #FF962B;
@@ -64,20 +77,11 @@ body {
 }
 
 #navbar-items .navbar-nav {
-  display: flex;
-  justify-content: center;
   width: 100%;
 }
 #navbar-items .nav-item {
-  display: flex;
-  justify-content: center;
   width: 100%;
   font-size: 1.4em;
-}
-
-.navbar-brand {
-  display: flex;
-  justify-content: center;
 }
 
 .navbar-brand img {
@@ -215,9 +219,6 @@ body {
 
 .imagem-assinatura {
   padding-left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .imagem-assinatura img {
@@ -251,9 +252,6 @@ body {
   height: 100%;
   width: 100%;
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   opacity: 0.6;
   transition: 0.5s;
@@ -291,13 +289,6 @@ body {
 .imagem_login {
   width: 12%;
   height: 12%;
-}
-
-.centralizar {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
 }
 
 #termos {
@@ -417,9 +408,6 @@ body {
 /* PRODUTOS */
 .imagem-produtos {
   padding-left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .imagem-produtos img {
@@ -434,8 +422,6 @@ body {
 }
 
 .botao-mensagem-produto {
-  display: flex;
-  justify-content: center;
   margin-top: 1em;
   margin-bottom: 2em;
 }
