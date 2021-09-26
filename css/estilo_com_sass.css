@@ -373,4 +373,40 @@ body {
   text-align: center;
 }
 
+/* LISTA DE PRODUTOS */
+.navbar-produtos .nav-link {
+  border: 1px solid black;
+  border-radius: 7px;
+  color: black;
+}
+
+.navbar-produtos .nav-link:hover {
+  background-color: #FFDB4F;
+}
+
+.lista-de-produtos .btn-outline-success {
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+.lista-de-produtos .btn-outline-success h1 {
+  color: black;
+  text-align: center;
+}
+
+.navbar-filtro {
+  color: black;
+  margin-top: 1em;
+  background-color: #FF962B;
+  border-radius: 15px;
+}
+
+.navbar-filtro h4 {
+  text-align: right;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.navbar-filtro .control-prev, .navbar-filtro .control-next {
+  background-color: #FFDB4F;
+}
+
 /*# sourceMappingURL=estilo_com_sass.css.map */

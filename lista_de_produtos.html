@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/estilo_com_sass.css" />
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -34,11 +34,11 @@
 
 <body>
     <!-- CABEÇALHO -->
-    <div class="container-fluid">
+    <header class="container-fluid">
         <div class="row">
-            <nav class="navbar navbar-expand-lg bg-primary-color" id="navbar">
+            <nav class="navbar navbar-expand-lg cabecalho">
                 <div class="col-md-4 ">
-                    <a href="index.html" class="navbar-brand primary-color">
+                    <a href="index.html" class="navbar-brand">
                         <img src="img/logo_circulo.png" alt="Mercado">
                         <span>Mercadinhx</span>
                     </a>
@@ -51,9 +51,9 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbar-items">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <div class="col-md-6">
+                            <div class="col-md-6 ">
                                 <li class="nav-item">
-                                    <form class="col-md-12 d-flex align-items-center">
+                                    <form class="col-md-12 d-flex align-items-center  barra-de-pesquisa">
                                         <input class="form-control me-2" type="search" placeholder="Pesquisar"
                                             aria-label="Search">
                                         <button class="btn btn-outline-success" type="submit"><i
@@ -63,13 +63,12 @@
                             </div>
                             <div class="col-md-4 ">
                                 <li class="nav-item">
-                                    <a href="assinatura_pro.html" class="nav-link primary-color"
-                                        aria-current="page">Seja Assinante</a>
+                                    <a href="assinatura_pro.html" class="nav-link primeira-cor" aria-current="page">Seja Assinante</a>
                                 </li>
                             </div>
                             <div class="col-md-2 ">
                                 <li class="nav-item">
-                                    <a href="login.html" class="nav-link primary-color" aria-current="page">Login</a>
+                                    <a href="login.html" class="nav-link primeira-cor" aria-current="page">Login</a>
                                 </li>
                             </div>
                         </ul>
@@ -77,7 +76,7 @@
                 </div>
             </nav>
         </div>
-    </div>
+    </header>
 
     <!-- SLIDER -->
     <div class="conteiner slider-container">
@@ -86,14 +85,16 @@
         <!-- Coloca o card  -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/bacon.jpg" alt="Mercadinhx" class="d-block">
+                <img src="img/alimentos_geral.png" alt="Mercadinhx" class="d-block">
             </div>
         </div>
+
+        
         <!-- Cria um container -->
         <div class="container">
             <!-- Cria uma linha para que possa ser dividida em até 12 colunas -->
             <div class="row">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-filtro">
                     <!-- Limita o codigo em 3/12 da linha -->
                     <div class="col-3">
                         <h4>Classificar por:</h4>
@@ -109,13 +110,13 @@
                         <div class="col-10">
                             <!-- Cria uma classe de navegação para os itens -->
                             <ul class="navbar-nav navbar-produtos">
-                                <div class="col-6 centralizar">
+                                <div class="col-2 centralizar">
                                     <li class="nav-item">
                                         <!-- Cria um botão para que o cliente decida em que ordem quer ver os produtos, (botão não ativo) -->
                                         <a class="nav-link active" aria-current="page" href="#">Prateleiras</a>
                                     </li>
                                 </div>
-                                <div class="col-6 centralizar">
+                                <div class="col-2 centralizar">
                                     <!-- Cria um botão que pode ser expandido para outros botões-->
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
@@ -134,7 +135,7 @@
                         </div>
 
 
-                        <div class="col-1">
+                        <div class="col-2">
                              <!-- Cria dois botões que trocam as páginas dos produtos, quando temos muitos produtos que não cabem na pag, (botão não ativo) -->
                             <button class="control-prev" type="button" data-bs-slide="prev">
                                  <!-- Botão de anterior -->
@@ -156,7 +157,7 @@
 
         <!-- CATEGORIAS DE PRODUTO -->
         <div class="container" id="featured-container">
-            <div class="col-12" id="featured-images">
+            <div class="col-12 lista-de-produtos" id="featured-images">
                 <!-- Cria uma linha -->
                 <div class="row g-4">
                     <!-- Classe que não limita a tela no mobile mas limita a área da imagem em telas maiores á 3/12 da linha -->
@@ -165,7 +166,11 @@
                         <img src="img/morango-alt.png" alt="Morango" class="img-fluid">
                         <div class="banner-content">
                             <!-- Imformações do produto -->
-                            <h1>Morango</h1>
+                            <button class="btn btn-outline-success" type="button">
+                                <a href="produtos.html" class="nav-link primary-color" aria-current="page">
+                                    <h1>Morango</h1>
+                                </a>
+                            </button>
                             <h4>R$7,99 p/ bandeja (250g)</h4>
                             <br>
                             <h4>Estoque: 50 bandejas</h4>
@@ -175,7 +180,12 @@
                     <div class="col-12 col-md-3">
                         <img src="img/melancia.JPEG" alt="Melancia" class="img-fluid">
                         <div class="banner-content">
-                            <h1>Melancia</h1>
+                            <button class="btn btn-outline-success" type="button">
+                                <a href="produtos.html" class="nav-link primary-color" aria-current="page">
+                                    <h1>Melancia</h1>
+                                </a>
+                            </button>
+                            
                             <h4>R$1,49 p/ Kg </h4>
                             <br>
                             <h4>Estoque: 20 unidades</h4>
@@ -185,7 +195,12 @@
                     <div class="col-12 col-md-3">
                         <img src="img/banana.png" alt="Banana" class="img-fluid">
                         <div class="banner-content">
-                            <h1>Banana-</h1>
+                            <button class="btn btn-outline-success" type="button">
+                                <a href="produtos.html" class="nav-link primary-color" aria-current="page">
+                                    <h1>Banana-</h1>
+                                </a>
+                            </button>
+                            
                             <h1>da-terra</h1>
                             <h4>R$5,99 p/ Kg</h4>
                             <br>
@@ -196,7 +211,12 @@
                     <div class="col-12 col-md-3">
                         <img src="img/uva-alt.png" alt="Uva" class="img-fluid">
                         <div class="banner-content">
-                            <h1>Uva</h1>
+                            <button class="btn btn-outline-success" type="button">
+                                <a href="produtos.html" class="nav-link primary-color" aria-current="page">
+                                    <h1>Uva</h1>
+                                </a>
+                            </button>
+                            
                             <h4>R$7,47 p/ bandeja (500g)</h4>
                             <br>
                             <h4>Estoque: 36 bandejas</h4>
@@ -207,7 +227,12 @@
                     <div class="col-12 col-md-3">
                         <img src="img/batata.JPEG" alt="Batata" class="img-fluid">
                         <div class="banner-content">
-                            <h1>Batata</h1>
+                            <button class="btn btn-outline-success" type="button">
+                                <a href="produtos.html" class="nav-link primary-color" aria-current="page">
+                                    <h1>Batata</h1>
+                                </a>
+                            </button>
+                            
                             <h4>R$3,99 p/ Kg</h4>
                             <br>
                             <h4>Estoque: 47 Kg</h4>
@@ -217,7 +242,12 @@
                     <div class="col-12 col-md-3">
                         <img src="img/berinjela.JPEG" alt="Berinjela" class="img-fluid">
                         <div class="banner-content">
-                            <h1>Berinjela</h1>
+                            <button class="btn btn-outline-success" type="button">
+                                <a href="produtos.html" class="nav-link primary-color" aria-current="page">
+                                    <h1>Berinjela</h1>
+                                </a>
+                            </button>
+                            
                             <h4>R$11,99 p/ Kg</h4>
                             <br>
                             <h4>Estoque: 12 Kg</h4>
@@ -227,7 +257,12 @@
                     <div class="col-12 col-md-3">
                         <img src="img/abobrinha.JPEG" alt="Abobrinha" class="img-fluid">
                         <div class="banner-content">
-                            <h1>Abobrinha</h1>
+                            <button class="btn btn-outline-success" type="button">
+                                <a href="produtos.html" class="nav-link primary-color" aria-current="page">
+                                    <h1>Abobrinha</h1>
+                                </a>
+                            </button>
+                            
                             <h4>R$3,50 p/ Kg</h4>
                             <br>
                             <h4>Estoque: 19 Kg</h4>
@@ -237,7 +272,12 @@
                     <div class="col-12 col-md-3">
                         <img src="img/alface.JPEG" alt="Alface" class="img-fluid">
                         <div class="banner-content">
-                            <h1>Alface</h1>
+                            <button class="btn btn-outline-success" type="button">
+                                <a href="produtos.html" class="nav-link primary-color" aria-current="page">
+                                    <h1>Alface</h1>
+                                </a>
+                            </button>
+                            
                             <h4>R$0,98 p/ pé</h4>
                             <br>
                             <h4>Estoque: 25 pés</h4>
@@ -248,7 +288,12 @@
                     <div class="col-12 col-md-3">
                         <img src="img/couveflor.JPEG" alt="Couve-flor" class="img-fluid">
                         <div class="banner-content">
-                            <h1>Couve flor</h1>
+                            <button class="btn btn-outline-success" type="button">
+                                <a href="produtos.html" class="nav-link primary-color" aria-current="page">
+                                    <h1>Couve flor</h1>
+                                </a>
+                            </button>
+                            
                             <h4>R$5,48 p/ pé</h4>
                             <br>
                             <h4>Estoque: 20 pés</h4>
@@ -258,7 +303,12 @@
                     <div class="col-12 col-md-3">
                         <img src="img/feijao.png" alt="Feijão" class="img-fluid">
                         <div class="banner-content">
-                            <h1>Feijão</h1>
+                            <button class="btn btn-outline-success" type="button">
+                                <a href="produtos.html" class="nav-link primary-color" aria-current="page">
+                                    <h1>Feijão</h1>
+                                </a>
+                            </button>
+                            
                             <h4>R$7,45 p/ pacote (1Kg)</h4>
                             <br>
                             <h4>Estoque: 43 Kg</h4>
@@ -268,7 +318,12 @@
                     <div class="col-12 col-md-3">
                         <img src="img/arroz.JPEG" alt="Arroz" class="img-fluid">
                         <div class="banner-content">
-                            <h1>Arroz</h1>
+                            <button class="btn btn-outline-success" type="button">
+                                <a href="produtos.html" class="nav-link primary-color" aria-current="page">
+                                    <h1>Arroz</h1>
+                                </a>
+                            </button>
+                            
                             <h4>R$20,31 p/ pacote (5Kg)</h4>
                             <br>
                             <h4>Estoque: 80 Kg</h4>
@@ -278,7 +333,12 @@
                     <div class="col-12 col-md-3">
                         <img src="img/macarrao.JPEG" alt="Macarrão" class="img-fluid">
                         <div class="banner-content">
-                            <h1>Macarrão</h1>
+                            <button class="btn btn-outline-success" type="button">
+                                <a href="produtos.html" class="nav-link primary-color" aria-current="page">
+                                    <h1>Macarrão</h1>
+                                </a>
+                            </button>
+                            
                             <h4>R$2,48 p/ pacote (500g)</h4>
                             <br>
                             <h4>Estoque: 38 pacotes</h4>
@@ -291,73 +351,73 @@
         
         
         <!-- RODAPÉ -->
-        <footer class="container-fluid segundo-fundo" id="rodape">
-            <div class="row">
-                <div class="col-12">
-                    <!-- PARTE DE BAIXO DO RODAPÉ -->
-                    <div class="row">
-                        <div class="col-12" id="rodape-cima">
-                            <div class="row">
-                                <div class="col-12 col-md-4 coluna-rodape-cima">
-                                    <h4>Fique por dentro das novidades</h4>
-                                    <p>Inscreva-se para saber em primeira mão</p>
-                                    <form>
-                                        <div class="mb-3">
-                                            <input type="email" class="form-control" placeholder="Digite o seu e-mail">
-                                        </div>
-                                        <button class="btn btn-dark" type="submit">Inscrever</button>
-                                    </form>
-                                </div>
-                                <div class="col-12 col-md-4 coluna-rodape-cima" id="rodape-cima-centro">
-                                    <h4>Formas de contato</h4>
-                                    <p> (xx)xxxx-xxxx</p>
-                                    <p> contato@mercadinhx.com</p>
-                                    <a href="fale_conosco.html">Fale conosco</a>
-                                </div>
-                                <div class="col-12 col-md-4 coluna-rodape-cima">
-                                    <div class="row">
-                                        <h4>Colaboradores <i class="bi bi-heart"></i> :</h4>
+    <footer class="container-fluid segundo-fundo" id="rodape">
+        <div class="row">
+            <div class="col-12">
+                <!-- PARTE DE BAIXO DO RODAPÉ -->
+                <div class="row">
+                    <div class="col-12" id="rodape-cima">
+                        <div class="row">
+                            <div class="col-12 col-md-4 coluna-rodape-cima">
+                                <h4>Fique por dentro das novidades</h4>
+                                <p>Inscreva-se para saber em primeira mão</p>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Digite o seu e-mail">
+                                    </div>
+                                    <button class="btn btn-dark" type="submit">Inscrever</button>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-4 coluna-rodape-cima" id="rodape-cima-centro">
+                                <h4>Formas de contato</h4>
+                                <p> (xx)xxxx-xxxx</p>
+                                <p> contato@mercadinhx.com</p>
+                                <a href="fale_conosco.html">Fale conosco</a>
+                            </div>
+                            <div class="col-12 col-md-4 coluna-rodape-cima">
+                                <div class="row">
+                                    <h4>Colaboradores <i class="bi bi-heart"></i> :</h4>
 
-                                        <div class="col-12">
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <p>Bruno Pereira Fornaro</p>
-                                                </li>
-                                                <li>
-                                                    <p>Daniel Ambrosim Falqueto</p>
-                                                </li>
-                                                <li>
-                                                    <p>Lorenzo Aguiar de Alencastro Guimarães</p>
-                                                </li>
-                                                <li>
-                                                    <p>Vanessa Berwanger Wille</p>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <div class="col-12">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <p>Bruno Pereira Fornaro</p>
+                                            </li>
+                                            <li>
+                                                <p>Daniel Ambrosim Falqueto</p>
+                                            </li>
+                                            <li>
+                                                <p>Lorenzo Aguiar de Alencastro Guimarães</p>
+                                            </li>
+                                            <li>
+                                                <p>Vanessa Berwanger Wille</p>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- PARTE DE BAIXO DO RODAPÉ -->
-                    <div class="row justify-content-around" id="rodape-baixo">
-                        <div class="col-12 col-md-3">
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-instagram"></i>
-                            <i class="bi bi-twitter"></i>
-                            <i class="bi bi-youtube"></i>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <p>Mercadinhx &copy; 2021</p>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <p>
-                                <a href="Quem_somos.html">Quem somos</a>
-                            </p>
-                        </div>
+                </div>
+                <!-- PARTE DE BAIXO DO RODAPÉ -->
+                <div class="row justify-content-around" id="rodape-baixo">
+                    <div class="col-12 col-md-3">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-youtube"></i>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <p>Mercadinhx &copy; 2021</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <p>
+                            <a href="Quem_somos.html">Quem somos</a>
+                        </p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
     </div>
 </body>
