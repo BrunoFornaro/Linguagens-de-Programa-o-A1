@@ -10,54 +10,52 @@ $preto: black
 
 /* Estilos Padrão para o Site */
 *
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif // Definindo a fonte padrão do site 
 
 body
-    background-color: $gesso
+    background-color: $gesso // Definindo a cor de fundo padrão do site 
 
-.primeira-cor
-    color: $preto
+.primeira-cor   
+    color: $preto // Cor principal para ser usada no site
 
 .segunda-cor
-    color: $gesso
+    color: $gesso // Cor secundaria para ser usada no site
 
-.primeiro-fundo
+.primeiro-fundo // Fundo principal para ser usado no site
     color: $preto
     background-color: $gesso
 
-.segundo-fundo
+.segundo-fundo  // Fundo secundario para ser usado no site
     color: $gesso
     background-color: $preto
 
 .segundo-fundo 
     a
-        color: $gesso
+        color: $gesso  // Cor dos links no segundo fundo
     a:hover
-        color: $amarelo
+        color: $amarelo // Cor ao passar por cima dos links no segundo fundo
 
 .container-fluid 
-    padding: 0em
-
-.justificar
-    text-align: justify
+    padding: 0em // Padding 0 no conteiner-fluid para fazer as linhas prencherem toda a horizontal
+    
 
 /* EXTEND */
-%centralizar_item
+%centralizar_item // Centralizador de itens horizonalmente
     display: flex
     align-items: center
     justify-content: center
 
-%centralizar
+%centralizar // Centralizador horizontal (sem align-items)
     display: flex  
-    align-items: center
     justify-content: center
 
 /* MIXIN */
-@mixin padding-lateral-igual($tamanho: 1em)
+@mixin padding-lateral-igual($tamanho: 1em) // Define o padding das laterais com o mesmo tamanho (padrão: 1em)
     padding-left: $tamanho
     padding-right: $tamanho
 
-@mixin imagem-centalizada-com-margem($proporcao-imagem: 50)
+@mixin imagem-centalizada-com-margem($proporcao-imagem: 50) // Define as bordas da imagem de acordo com a proporção dela, para ficar centralizada (padrão: 50% de largura)
+    // Operadores utilizados abaixo para calcular o tamanho das margens
     width: $proporcao-imagem * 1%
     margin-left: (100 - $proporcao-imagem) / 2 * 1%
     margin-right: (100 - $proporcao-imagem) / 2 * 1%
