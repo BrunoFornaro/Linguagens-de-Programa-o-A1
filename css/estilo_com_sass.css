@@ -98,6 +98,11 @@ body {
 }
 .nav-item button {
   border: 0;
+  color: black;
+}
+.nav-item button:hover {
+  background-color: #FFDB4F;
+  color: black;
 }
 
 /* RODAPÉ */
