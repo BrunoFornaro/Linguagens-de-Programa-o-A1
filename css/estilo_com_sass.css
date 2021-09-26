@@ -55,6 +55,7 @@ body {
   justify-content: center;
 }
 
+/* MIXIN */
 /* CABEÇALHO */
 .cabecalho {
   background-color: #FF962B;
@@ -308,16 +309,20 @@ body {
   text-decoration: underline;
   text-decoration-color: #FF962B;
   margin-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 #quem-somos p {
   margin-top: 1em;
   text-align: justify;
   text-justify: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 #quem-somos .img {
   float: left;
-  width: 200px;
-  height: 150px;
+  width: 2em;
+  height: 1.5em;
   object-fit: fill;
 }
 

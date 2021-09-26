@@ -10,30 +10,30 @@ $preto: black
 
 /* Estilos Padrão para o Site */
 *
-  font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif
 
 body
-  background-color: $gesso
+    background-color: $gesso
 
 .primeira-cor
-  color: $preto
+    color: $preto
 
 .segunda-cor
-  color: $gesso
+    color: $gesso
 
 .primeiro-fundo
-  color: $preto
-  background-color: $gesso
+    color: $preto
+    background-color: $gesso
 
 .segundo-fundo
-  color: $gesso
-  background-color: $preto
+    color: $gesso
+    background-color: $preto
 
 .segundo-fundo 
-  a
-    color: $gesso
-  a:hover
-    color: $amarelo
+    a
+        color: $gesso
+    a:hover
+        color: $amarelo
 
 .container-fluid 
     padding: 0em
@@ -51,3 +51,13 @@ body
     display: flex  
     align-items: center
     justify-content: center
+
+/* MIXIN */
+@mixin padding-lateral-igual($tamanho: 1em)
+    padding-left: $tamanho
+    padding-right: $tamanho
+
+@mixin imagem-centalizada-com-margem($proporcao-imagem: 50)
+    width: $proporcao-imagem * 1%
+    margin-left: (100 - $proporcao-imagem) / 2 * 1%
+    margin-right: (100 - $proporcao-imagem) / 2 * 1%
