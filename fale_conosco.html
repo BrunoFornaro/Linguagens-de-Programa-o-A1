@@ -34,19 +34,28 @@
 
 <body>
     <!-- CABEÇALHO -->
+    <!-- Cria um container -->
     <header class="container-fluid">
+        <!-- Cria uma linha para ser dividida em colunas -->
         <div class="row">
+            <!-- Classe de navegação -->
             <nav class="navbar navbar-expand-lg cabecalho">
-                <div class="col-12 col-md-4">
+                <!-- Limita o conteudo até 4/12 colunad da linha -->
+                <div class="col-12 col-md-4 ">
+                    <!-- Link que leva a página principal do site -->
                     <a href="index.html" class="navbar-brand">
+                        <!-- Logo do mercadinhx -->
                         <img src="img/logo_circulo.png" alt="Mercado">
                         <span>Mercadinhx</span>
                     </a>
                 </div>
+                <!-- Limita a 8 colunas das colunas restantes -->
                 <div class="col-12 col-md-8">
+                    <!-- Botão que só aparece no mobile que mostra as opções de navegação quando acionado -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false"
                         aria-label="Toggle navigation">
+                        <!-- Icon de lista -->
                         <i class="bi bi-list"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbar-items">
@@ -56,6 +65,7 @@
                                     <form class="col-md-12 d-flex align-items-center  barra-de-pesquisa">
                                         <input class="form-control me-2" type="search" placeholder="Pesquisar"
                                             aria-label="Search">
+                                        <!-- Botão e icon de pesquisar -->
                                         <button class="btn btn-outline-success" type="submit"><i
                                                 class="bi bi-search"></i></button>
                                     </form>
@@ -63,11 +73,14 @@
                             </div>
                             <div class="col-md-4 ">
                                 <li class="nav-item">
-                                    <a href="assinatura_pro.html" class="nav-link primeira-cor" aria-current="page">Seja Assinante</a>
+                                    <!-- Link para assinatura pró -->
+                                    <a href="assinatura_pro.html" class="nav-link primeira-cor" aria-current="page">Seja
+                                        Assinante</a>
                                 </li>
                             </div>
                             <div class="col-md-2 ">
                                 <li class="nav-item">
+                                    <!-- Link para login -->
                                     <a href="login.html" class="nav-link primeira-cor" aria-current="page">Login</a>
                                 </li>
                             </div>
@@ -77,27 +90,34 @@
             </nav>
         </div>
     </header>
+
+    <!--FALE CONOSCO-->
     <!-- Cria um container -->
     <div class="container">
         <!-- Cria uma linha -->
         <div class="row">
-            <!-- Cria um formulário  -->
+            <!-- Cria um formulário com texto justificado -->
             <form id="fale-conosco">
+                <!-- Divide a linha em 12 colunas -->
                 <div class="col-12 centralizar mt-5 mb-2">
                     <!-- Imagem -->
                     <img src="img/mercado_fornaro_carrinho-transp.png" alt="" class="imagem_login">
                 </div>
+            
                 <div class="col-12 centralizar mb-3">
                     <h3 class="primeira-cor">Fale conosco</h3>
                 </div>
+
                 <div class="col-12 centralizar">
                     <div class="col-12 col-md-5">
                         <h6>Você possui alguma dúvida? Mande-a pelo formulário abaixo, procuramos responder o mais
                             breve possível.</h6>
                     </div>
                 </div>
+
                 <div class="col-12 centralizar">
                     <div class="col-12 col-md-5">
+                        <!-- Locais para oa clientes escreverem as informações -->
                         <input type="nome" placeholder="Nome" class="form-control my-3 p-2">
                         <input type="numero" placeholder="Número (XX)XXXXX-XXXX" class="form-control my-3 p-2">
                         <input type="email" placeholder="E-mail" class="form-control my-3 p-2">
@@ -117,31 +137,36 @@
     <footer class="container-fluid segundo-fundo" id="rodape">
         <div class="row">
             <div class="col-12">
-                <!-- PARTE DE BAIXO DO RODAPÉ -->
                 <div class="row">
                     <div class="col-12" id="rodape-cima">
                         <div class="row">
+                            <!--Coluna com formulário para ficar por dentro das novidades-->
                             <div class="col-12 col-md-4 coluna-rodape-cima">
                                 <h4>Fique por dentro das novidades</h4>
                                 <p>Inscreva-se para saber em primeira mão</p>
+                                <!--Cria um formulário-->
                                 <form>
                                     <div class="mb-3">
                                         <input type="email" class="form-control" placeholder="Digite o seu e-mail">
                                     </div>
-                                    <button class="btn btn-dark" type="submit">Inscrever</button>
+                                    <button class="btn btn-dark" type="submit">Inscrever-se</button>
                                 </form>
                             </div>
+
+                            <!--Coluna das formas de contato-->
                             <div class="col-12 col-md-4 coluna-rodape-cima" id="rodape-cima-centro">
                                 <h4>Formas de contato</h4>
                                 <p> (xx)xxxx-xxxx</p>
                                 <p> contato@mercadinhx.com</p>
                                 <a href="fale_conosco.html">Fale conosco</a>
                             </div>
+
+                            <!--Coluna de colaboradores-->
                             <div class="col-12 col-md-4 coluna-rodape-cima">
                                 <div class="row">
                                     <h4>Colaboradores <i class="bi bi-heart"></i> :</h4>
-
                                     <div class="col-12">
+                                        <!--Cria uma lista-->
                                         <ul class="list-unstyled">
                                             <li>
                                                 <p>Bruno Pereira Fornaro</p>
@@ -162,9 +187,11 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- PARTE DE BAIXO DO RODAPÉ -->
                 <div class="row justify-content-around" id="rodape-baixo">
                     <div class="col-12 col-md-3">
+                        <!--Logos de redes sociais (não são ativos)-->
                         <i class="bi bi-facebook"></i>
                         <i class="bi bi-instagram"></i>
                         <i class="bi bi-twitter"></i>
@@ -175,6 +202,7 @@
                     </div>
                     <div class="col-12 col-md-3">
                         <p>
+                            <!-- Link que direciona para a página "Quem somos" -->
                             <a href="Quem_somos.html">Quem somos</a>
                         </p>
                     </div>
@@ -182,4 +210,5 @@
             </div>
         </div>
     </footer>
+    </div>
 </body>

@@ -34,19 +34,28 @@
 
 <body>
     <!-- CABEÇALHO -->
+    <!-- Cria um container -->
     <header class="container-fluid">
+        <!-- Cria uma linha para ser dividida em colunas -->
         <div class="row">
+            <!-- Classe de navegação -->
             <nav class="navbar navbar-expand-lg cabecalho">
-                <div class="col-12 col-md-4">
+                <!-- Limita o conteudo até 4/12 colunad da linha -->
+                <div class="col-12 col-md-4 ">
+                    <!-- Link que leva a página principal do site -->
                     <a href="index.html" class="navbar-brand">
+                        <!-- Logo do mercadinhx -->
                         <img src="img/logo_circulo.png" alt="Mercado">
                         <span>Mercadinhx</span>
                     </a>
                 </div>
+                <!-- Limita a 8 colunas das colunas restantes -->
                 <div class="col-12 col-md-8">
+                    <!-- Botão que só aparece no mobile que mostra as opções de navegação quando acionado -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false"
                         aria-label="Toggle navigation">
+                        <!-- Icon de lista -->
                         <i class="bi bi-list"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbar-items">
@@ -56,6 +65,7 @@
                                     <form class="col-md-12 d-flex align-items-center  barra-de-pesquisa">
                                         <input class="form-control me-2" type="search" placeholder="Pesquisar"
                                             aria-label="Search">
+                                        <!-- Botão e icon de pesquisar -->
                                         <button class="btn btn-outline-success" type="submit"><i
                                                 class="bi bi-search"></i></button>
                                     </form>
@@ -63,12 +73,14 @@
                             </div>
                             <div class="col-md-4 ">
                                 <li class="nav-item">
+                                    <!-- Link para assinatura pró -->
                                     <a href="assinatura_pro.html" class="nav-link primeira-cor" aria-current="page">Seja
                                         Assinante</a>
                                 </li>
                             </div>
                             <div class="col-md-2 ">
                                 <li class="nav-item">
+                                    <!-- Link para login -->
                                     <a href="login.html" class="nav-link primeira-cor" aria-current="page">Login</a>
                                 </li>
                             </div>
@@ -80,16 +92,20 @@
     </header>
 
     <!-- SLIDER -->
+    <!-- Cria um container -->
     <div class="conteiner slider-container">
+        <!-- Cria uma linha para ser dividida em colunas -->
         <div class="row">
             <div class="col-12">
                 <div id="slider" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
+                        <!-- Criação de dois botões que mudam o banner mostrado  -->
                         <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#slider" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
                     </div>
+                    <!-- Adiciona os dois banners -->
                     <div class="carousel-inner ">
                         <div class="carousel-item active ">
                             <img src="img/banner_1.png" alt="Economize dinheiro com o mercadinhx">
@@ -98,10 +114,12 @@
                             <img src="img/banner_2.png" alt="Diversas funções que ajudam você">
                         </div>
                     </div>
+                    <!-- Cria o botão de anterior -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
                         <i class="bi bi-chevron-compact-left" aria-hidden="true"></i>
                         <span class="visually-hidden">Anterior</span>
                     </button>
+                    <!-- Cria o botão de próximo -->
                     <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
                         <i class="bi bi-chevron-compact-right" aria-hidden="true"></i>
                         <span class="visually-hidden">Proximo</span>
@@ -111,19 +129,25 @@
         </div>
 
         <!-- CATEGORIAS DE PRODUTO -->
+        <!-- Cria um conteiner -->
         <div class="container" id="featured-container">
             <div class="col-12" id="featured-images">
+                <!-- Cria uma linha para ser dividida em colunas -->
                 <div class="row g-4">
                     <div class="col-12 promocoes">
+                        <!-- Imagem do banner de promoçoes -->
                         <img src="img/promocao.png" alt="Clique para ir">
                         <div class="banner-content">
+                            <!-- Botão que leva a pag de promoções -->
                             <button class="btn btn-dark" type="button">
+                                <!-- Linhk que leva as promoções -->
                                 <a href="lista_de_produtos.html" class="nav-link primary-color" aria-current="page">
                                     <h3>Vá para as promoções</h3>
                                 </a>
                             </button>
                         </div>
                     </div>
+                    <!-- No mobile ocupa a tela toda (12/12 colunas) em telas maiores ocupa 3/12 colunas da tela -->
                     <div class="col-12 col-md-3">
                         <img src="img/padaria2.png" alt="Clique para ir">
                         <div class="banner-content">
@@ -175,31 +199,36 @@
         <footer class="container-fluid segundo-fundo" id="rodape">
             <div class="row">
                 <div class="col-12">
-                    <!-- PARTE DE BAIXO DO RODAPÉ -->
                     <div class="row">
                         <div class="col-12" id="rodape-cima">
                             <div class="row">
+                                <!--Coluna com formulário para ficar por dentro das novidades-->
                                 <div class="col-12 col-md-4 coluna-rodape-cima">
                                     <h4>Fique por dentro das novidades</h4>
                                     <p>Inscreva-se para saber em primeira mão</p>
+                                    <!--Cria um formulário-->
                                     <form>
                                         <div class="mb-3">
                                             <input type="email" class="form-control" placeholder="Digite o seu e-mail">
                                         </div>
-                                        <button class="btn btn-dark" type="submit">Inscrever</button>
+                                        <button class="btn btn-dark" type="submit">Inscrever-se</button>
                                     </form>
                                 </div>
+
+                                <!--Coluna das formas de contato-->
                                 <div class="col-12 col-md-4 coluna-rodape-cima" id="rodape-cima-centro">
                                     <h4>Formas de contato</h4>
                                     <p> (xx)xxxx-xxxx</p>
                                     <p> contato@mercadinhx.com</p>
                                     <a href="fale_conosco.html">Fale conosco</a>
                                 </div>
+
+                                <!--Coluna de colaboradores-->
                                 <div class="col-12 col-md-4 coluna-rodape-cima">
                                     <div class="row">
                                         <h4>Colaboradores <i class="bi bi-heart"></i> :</h4>
-
                                         <div class="col-12">
+                                            <!--Cria uma lista-->
                                             <ul class="list-unstyled">
                                                 <li>
                                                     <p>Bruno Pereira Fornaro</p>
@@ -220,9 +249,11 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- PARTE DE BAIXO DO RODAPÉ -->
                     <div class="row justify-content-around" id="rodape-baixo">
                         <div class="col-12 col-md-3">
+                            <!--Logos de redes sociais (não são ativos)-->
                             <i class="bi bi-facebook"></i>
                             <i class="bi bi-instagram"></i>
                             <i class="bi bi-twitter"></i>
@@ -233,6 +264,7 @@
                         </div>
                         <div class="col-12 col-md-3">
                             <p>
+                                <!-- Link que direciona para a página "Quem somos" -->
                                 <a href="Quem_somos.html">Quem somos</a>
                             </p>
                         </div>

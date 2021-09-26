@@ -34,19 +34,28 @@
 
 <body>
     <!-- CABEÇALHO -->
+    <!-- Cria um container -->
     <header class="container-fluid">
+        <!-- Cria uma linha para ser dividida em colunas -->
         <div class="row">
+            <!-- Classe de navegação -->
             <nav class="navbar navbar-expand-lg cabecalho">
+                <!-- Limita o conteudo até 4/12 colunad da linha -->
                 <div class="col-12 col-md-4">
+                    <!-- Link que leva a página principal do site -->
                     <a href="index.html" class="navbar-brand">
+                        <!-- Logo do mercadinhx -->
                         <img src="img/logo_circulo.png" alt="Mercado">
                         <span>Mercadinhx</span>
                     </a>
                 </div>
+                <!-- Limita a 8 colunas das colunas restantes -->
                 <div class="col-12 col-md-8">
+                    <!-- Botão que só aparece no mobile que mostra as opções de navegação quando acionado -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false"
                         aria-label="Toggle navigation">
+                        <!-- Icon de lista -->
                         <i class="bi bi-list"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbar-items">
@@ -56,6 +65,7 @@
                                     <form class="col-md-12 d-flex align-items-center  barra-de-pesquisa">
                                         <input class="form-control me-2" type="search" placeholder="Pesquisar"
                                             aria-label="Search">
+                                        <!-- Botão e icon de pesquisar -->
                                         <button class="btn btn-outline-success" type="submit"><i
                                                 class="bi bi-search"></i></button>
                                     </form>
@@ -63,12 +73,14 @@
                             </div>
                             <div class="col-md-4 ">
                                 <li class="nav-item">
+                                    <!-- Link para assinatura pró -->
                                     <a href="assinatura_pro.html" class="nav-link primeira-cor" aria-current="page">Seja
                                         Assinante</a>
                                 </li>
                             </div>
                             <div class="col-md-2 ">
                                 <li class="nav-item">
+                                    <!-- Link para login -->
                                     <a href="login.html" class="nav-link primeira-cor" aria-current="page">Login</a>
                                 </li>
                             </div>
@@ -82,16 +94,19 @@
     <!-- INFO -->
     <!-- EXPLICAÇÕES DAS ASSINATURAS -->
     <div class="conteiner primeira-cor conteiner-assinatura">
-
+        <!-- Cria linha, para ser dividida em colunas, centralizada -->
+        <!--Título-->
         <div class="row justify-content-center  ">
             <div class="col 12 col-md-10 fundo-amarelo ">
                 <h2 class="titulo">Entenda melhor nossa proposta de assinatura!</h2>
             </div>
         </div>
+
+        <!--Descrição da assinatura-->
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 fundo-amarelo tipos-de-assinatura">
                 <p>Todos nós, em algum momento da vida, já passamos por aquela situação que precisamos fazer uma compra
-                    rápida, mas até conseguirmos ir até o mercado, procurar os produtos, esperar a fila do caixa para
+                    rápida, mas até conseguirmos ir ao mercado, procurar os produtos, esperar a fila do caixa para
                     pagar... uma eternidade já passou, certo?</p>
                 <p> Isso pode ser ainda pior quando nem se quer encontramos o produto que estavamos desejamos. Um tempo
                     gasto que não volta, viagem perdida...</p>
@@ -121,6 +136,7 @@
                     prontinhas esperando por você!***</p>
             </div>
         </div>
+        <!--Observações-->
         <div class="row justify-content-center explicacoes">
             <div class="col-12 col-md-10 fundo-amarelo">
                 <p>*Nem todas as funcionalidades estão disponíveis ainda, aguarde por próximas atualizações</p>
@@ -135,9 +151,11 @@
     <div class="conteiner " id="conteiner-tipos-de-assinatura">
         <div class="row justify-content-center">
             <div class="col-12 col-md-4 imagem-assinatura">
+                <!-- Imagem do produto -->
                 <img src="img/folder_assinatura.jpg" alt="Informações da empresa">
             </div>
 
+            <!-- Informações sobre a assinatura -->
             <div class="col-12 col-md-6">
                 <div class="row row-tipos-assinatura">
                     <div class="col-12 fundo-amarelo">
@@ -210,6 +228,7 @@
                             </li>
                         </ul>
 
+                        <!--Botão para criar conta-->
                         <div class="col-12 centralizar">
                             <button class="btn btn-outline-success" type="button">
                                 <a href="cadastro.html" class="nav-link primary-color" aria-current="page">
@@ -218,6 +237,7 @@
                             </button>
                         </div>
 
+                        <!--Observações-->
                         <div class="row justify-content-center explicacoes">
                             <div class="col-12 col-md-10 fundo-amarelo">
                                 <p>*Nem todas as funcionalidades estão disponíveis ainda, aguarde por próximas
@@ -232,7 +252,7 @@
         </div>
     </div>
 
-    <!-- CATEGORIAS DE PRODUTO -->
+    <!-- Banner promoção -->
     <div class="container" id="featured-container">
         <div id="featured-images">
             <div class="col-12">
@@ -252,31 +272,36 @@
     <footer class="container-fluid segundo-fundo" id="rodape">
         <div class="row">
             <div class="col-12">
-                <!-- PARTE DE BAIXO DO RODAPÉ -->
                 <div class="row">
                     <div class="col-12" id="rodape-cima">
                         <div class="row">
+                            <!--Coluna com formulário para ficar por dentro das novidades-->
                             <div class="col-12 col-md-4 coluna-rodape-cima">
                                 <h4>Fique por dentro das novidades</h4>
                                 <p>Inscreva-se para saber em primeira mão</p>
+                                <!--Cria um formulário-->
                                 <form>
                                     <div class="mb-3">
                                         <input type="email" class="form-control" placeholder="Digite o seu e-mail">
                                     </div>
-                                    <button class="btn btn-dark" type="submit">Inscrever</button>
+                                    <button class="btn btn-dark" type="submit">Inscrever-se</button>
                                 </form>
                             </div>
+
+                            <!--Coluna das formas de contato-->
                             <div class="col-12 col-md-4 coluna-rodape-cima" id="rodape-cima-centro">
                                 <h4>Formas de contato</h4>
                                 <p> (xx)xxxx-xxxx</p>
                                 <p> contato@mercadinhx.com</p>
                                 <a href="fale_conosco.html">Fale conosco</a>
                             </div>
+
+                            <!--Coluna de colaboradores-->
                             <div class="col-12 col-md-4 coluna-rodape-cima">
                                 <div class="row">
                                     <h4>Colaboradores <i class="bi bi-heart"></i> :</h4>
-
                                     <div class="col-12">
+                                        <!--Cria uma lista-->
                                         <ul class="list-unstyled">
                                             <li>
                                                 <p>Bruno Pereira Fornaro</p>
@@ -297,9 +322,11 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- PARTE DE BAIXO DO RODAPÉ -->
                 <div class="row justify-content-around" id="rodape-baixo">
                     <div class="col-12 col-md-3">
+                        <!--Logos de redes sociais (não são ativos)-->
                         <i class="bi bi-facebook"></i>
                         <i class="bi bi-instagram"></i>
                         <i class="bi bi-twitter"></i>
@@ -310,6 +337,7 @@
                     </div>
                     <div class="col-12 col-md-3">
                         <p>
+                            <!-- Link que direciona para a página "Quem somos" -->
                             <a href="Quem_somos.html">Quem somos</a>
                         </p>
                     </div>
@@ -317,4 +345,5 @@
             </div>
         </div>
     </footer>
+    </div>
 </body>
