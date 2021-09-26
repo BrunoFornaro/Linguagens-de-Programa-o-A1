@@ -221,22 +221,19 @@ body {
     padding-right: 5em;
   }
 }
-/* BANNER COM TRASPARENCIA */
+/* BANNER COM TRASPARÊNCIA */
 #featured-images {
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
+  text-align: center;
 }
 
-#featured-images .col-md-3 {
+#featured-images .col-md-3, #featured-images .col-12 {
   position: relative;
   cursor: pointer;
 }
 #featured-images .col-md-3:hover > .banner-content {
   opacity: 0.8;
-}
-#featured-images .col-12 {
-  position: relative;
-  cursor: pointer;
 }
 #featured-images .col-12:hover > .banner-content {
   opacity: 0.9;
@@ -315,23 +312,12 @@ body {
   padding-right: 0.5em;
 }
 #quem-somos .img {
-  float: left;
   width: 2em;
   height: 1.5em;
-  object-fit: fill;
 }
 
 #bio-images img {
   width: 100%;
-}
-
-#featured-images {
-  text-align: center;
-  margin-bottom: 4em;
-}
-
-#featured-images img {
-  margin-top: 0.6em;
 }
 
 .card-body {
@@ -369,7 +355,7 @@ body {
   border-radius: 15px;
 }
 
-.btn-outline-success h3 {
+.btn-outline-success h3, .btn-outline-success h1 {
   color: black;
   text-align: center;
 }
@@ -389,10 +375,6 @@ body {
   border-radius: 15px;
   margin-bottom: 1em;
 }
-.lista-de-produtos .btn-outline-success h1 {
-  color: black;
-  text-align: center;
-}
 
 .navbar-filtro {
   color: black;
@@ -411,10 +393,6 @@ body {
 }
 
 /* PRODUTOS */
-.imagem-produtos {
-  padding-left: 0;
-}
-
 .imagem-produtos img {
   max-height: 22em;
   max-width: 100%;
@@ -434,7 +412,5 @@ body {
 .informacoes-produto .col-md-10 {
   padding-bottom: 2em;
 }
-
-/*teste*/
 
 /*# sourceMappingURL=estilo_com_sass.css.map */
