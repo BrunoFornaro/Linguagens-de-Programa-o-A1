@@ -102,6 +102,7 @@
         <div class="row">
             <!-- Cria um formulário -->
             <form>
+                <!-- Divide a linha em 12 colunas -->
                 <div class="col-12 centralizar mt-5 mb-2">
                     <!-- Coloca a imagem -->
                     <img src="img/mercado_fornaro_carrinho-transp.png" alt="" class="imagem_login">
@@ -110,19 +111,19 @@
                     <h4 class="primeira-cor">Entre na sua conta</h4>
                 </div>
                 <div class="col-12 centralizar">
+                    <!--form-row é uma variação de row que substitui as divisões de coluna padrão por layouts mais estreitos e compactos-->
                     <div class="form-row">
                         <div class="col-12">
-                            <!-- Locais para oa clientes escreverem as informações -->
+                            <!-- Locais para os clientes escreverem as informações -->
                             <input type="email" placeholder="Escreva seu e-mail" class="form-control my-3 p-2">
                             <input type="password" placeholder="*******" class="form-control my-3 p-2">
-                            <button type="button " class="botao_laranja mt-3 mb-3">Entrar</button>
-
+                            <button class="botao_laranja mt-3 mb-3">Entrar</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 centralizar">
                     <!-- Link para opções caso tenham esquecido a senha (link não ativo) -->
-                    <a href="#">Esqueceu sua senha?</a>
+                    <a href="recuperar_senha.html">Esqueceu sua senha?</a>
                 </div>
                 <div class="col-12 centralizar mb-5">
                     <!-- Link que direciona para a criação de uma conta -->
@@ -137,31 +138,36 @@
     <footer class="container-fluid segundo-fundo" id="rodape">
         <div class="row">
             <div class="col-12">
-                <!-- PARTE DE BAIXO DO RODAPÉ -->
                 <div class="row">
                     <div class="col-12" id="rodape-cima">
                         <div class="row">
+                            <!--Coluna com formulário para ficar por dentro das novidades-->
                             <div class="col-12 col-md-4 coluna-rodape-cima">
                                 <h4>Fique por dentro das novidades</h4>
                                 <p>Inscreva-se para saber em primeira mão</p>
+                                <!--Cria um formulário-->
                                 <form>
                                     <div class="mb-3">
                                         <input type="email" class="form-control" placeholder="Digite o seu e-mail">
                                     </div>
-                                    <button class="btn btn-dark" type="submit">Inscrever</button>
+                                    <button class="btn btn-dark" type="submit">Inscrever-se</button>
                                 </form>
                             </div>
+
+                            <!--Coluna das formas de contato-->
                             <div class="col-12 col-md-4 coluna-rodape-cima" id="rodape-cima-centro">
                                 <h4>Formas de contato</h4>
                                 <p> (xx)xxxx-xxxx</p>
                                 <p> contato@mercadinhx.com</p>
                                 <a href="fale_conosco.html">Fale conosco</a>
                             </div>
+
+                            <!--Coluna de colaboradores-->
                             <div class="col-12 col-md-4 coluna-rodape-cima">
                                 <div class="row">
                                     <h4>Colaboradores <i class="bi bi-heart"></i> :</h4>
-
                                     <div class="col-12">
+                                        <!--Cria uma lista-->
                                         <ul class="list-unstyled">
                                             <li>
                                                 <p>Bruno Pereira Fornaro</p>
@@ -182,9 +188,11 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- PARTE DE BAIXO DO RODAPÉ -->
                 <div class="row justify-content-around" id="rodape-baixo">
                     <div class="col-12 col-md-3">
+                        <!--Logos de redes sociais (não são ativos)-->
                         <i class="bi bi-facebook"></i>
                         <i class="bi bi-instagram"></i>
                         <i class="bi bi-twitter"></i>
@@ -195,6 +203,7 @@
                     </div>
                     <div class="col-12 col-md-3">
                         <p>
+                            <!-- Link que direciona para a página "Quem somos" -->
                             <a href="Quem_somos.html">Quem somos</a>
                         </p>
                     </div>
