@@ -65,8 +65,9 @@
                                     <form class="col-md-12 d-flex align-items-center  barra-de-pesquisa">
                                         <input class="form-control me-2" type="search" placeholder="Pesquisar"
                                             aria-label="Search">
-                                        <!-- Botão e icon de pesquisar -->
+                                            <!-- Botão e icon de pesquisar -->
                                         <button class="btn btn-outline-success" type="submit"><i
+                                                
                                                 class="bi bi-search"></i></button>
                                     </form>
                                 </li>
@@ -91,39 +92,37 @@
         </div>
     </header>
 
-    <!-- LOGIN -->
+    <!--Recuperação de senha-->
     <!-- Cria um container -->
     <div class="container">
         <!-- Cria uma linha -->
         <div class="row">
-            <!-- Cria um formulário -->
-            <form>
+            <!-- Cria um formulário com texto justificado -->
+            <form id="fale-conosco">
                 <!-- Divide a linha em 12 colunas -->
                 <div class="col-12 centralizar mt-5 mb-2">
-                    <!-- Coloca a imagem -->
+                    <!-- Imagem -->
                     <img src="img/mercado_fornaro_carrinho-transp.png" alt="" class="imagem_login">
                 </div>
-                <div class="col-12 centralizar">
-                    <h4 class="primeira-cor">Entre na sua conta</h4>
+            
+                <div class="col-12 centralizar mb-3">
+                    <h3 class="primeira-cor">Recuperação de senha</h3>
                 </div>
+
                 <div class="col-12 centralizar">
-                    <!--form-row é uma variação de row que substitui as divisões de coluna padrão por layouts mais estreitos e compactos-->
-                    <div class="form-row">
-                        <div class="col-12">
-                            <!-- Locais para os clientes escreverem as informações -->
-                            <input type="email" placeholder="Escreva seu e-mail" class="form-control my-3 p-2">
-                            <input type="password" placeholder="*******" class="form-control my-3 p-2">
-                            <button type="button " class="botao_laranja mt-3 mb-3">Entrar</button>
-                        </div>
+                    <div class="col-12 col-md-5">
+                        <h6>Para recuperar sua senha, informe-nos seu e-mail que enviaremos um link para alteração da senha.</h6>
                     </div>
                 </div>
+
                 <div class="col-12 centralizar">
-                    <!-- Link para opções caso tenham esquecido a senha (link não ativo) -->
-                    <a href="recuperar_senha.html">Esqueceu sua senha?</a>
-                </div>
-                <div class="col-12 centralizar mb-5">
-                    <!-- Link que direciona para a criação de uma conta -->
-                    <p>Não possui uma conta? <a href="cadastro.html">Crie uma aqui.</a> </p>
+                    <div class="col-12 col-md-5">
+                        <!-- Locais para o cliente escrever seu e-mail  -->
+                        <input type="email" placeholder="E-mail" class="form-control my-3 p-2">
+                        <div class="col-12 centralizar">
+                            <button type="button " class="botao_laranja mt-3 mb-3">Enviar</button>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
