@@ -55,12 +55,12 @@ body {
   color: black;
 }
 .cabecalho a:hover {
-  color: lightgray;
+  color: #F2F2F2;
 }
 .cabecalho a:active {
   border-bottom: 1px;
   border-bottom-style: solid;
-  border-bottom-color: black;
+  border-bottom-color: #F2F2F2;
 }
 
 #navbar-items .navbar-nav {
