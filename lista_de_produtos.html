@@ -78,20 +78,26 @@
             </nav>
         </div>
     </div>
+
     <!-- SLIDER -->
     <div class="conteiner slider-container">
 
 
+        <!-- Coloca o card  -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/bacon.jpg" alt="Bacon" class="d-block">
+                <img src="img/bacon.jpg" alt="Mercadinhx" class="d-block">
             </div>
         </div>
-        <div class="container ">
+        <!-- Cria um container -->
+        <div class="container">
+            <!-- Cria uma linha para que possa ser dividida em até 12 colunas -->
             <div class="row">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <!-- Limita o codigo em 3/12 da linha -->
                     <div class="col-3">
                         <h4>Classificar por:</h4>
+                        <!-- Cria um botão de menu que só é visto no mobile-->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -99,20 +105,24 @@
                         </button>
                     </div>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <!-- Ocupa 10/12 da área restante da linha  -->
                         <div class="col-10">
-
+                            <!-- Cria uma classe de navegação para os itens -->
                             <ul class="navbar-nav navbar-produtos">
                                 <div class="col-6 centralizar">
                                     <li class="nav-item">
+                                        <!-- Cria um botão para que o cliente decida em que ordem quer ver os produtos, (botão não ativo) -->
                                         <a class="nav-link active" aria-current="page" href="#">Prateleiras</a>
                                     </li>
                                 </div>
                                 <div class="col-6 centralizar">
+                                    <!-- Cria um botão que pode ser expandido para outros botões-->
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Preço:
                                         </a>
+                                        <!-- Cria dois botões para que o cliente decida em que ordem quer ver os produtos, (botão não ativo)-->
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                             <li><a class="dropdown-item" href="#">Crescente</a></li>
                                             <li><a class="dropdown-item" href="#">Descrescente</a></li>
@@ -125,14 +135,17 @@
 
 
                         <div class="col-1">
+                             <!-- Cria dois botões que trocam as páginas dos produtos, quando temos muitos produtos que não cabem na pag, (botão não ativo) -->
                             <button class="control-prev" type="button" data-bs-slide="prev">
+                                 <!-- Botão de anterior -->
                                 <i class="bi bi-chevron-left">
                                     <span class="visually-hidden">Anterior</span>
                                 </i>
                             </button>
                             <button class="control-next" type="button" data-bs-slide="next">
+                                <!-- Botão de próximor -->
                                 <i class="bi bi-chevron-right">
-                                    <span class="visually-hidden">Proximo</span>
+                                    <span class="visually-hidden">Próximo</span>
                                 </i>
                             </button>
                         </div>
@@ -144,10 +157,14 @@
         <!-- CATEGORIAS DE PRODUTO -->
         <div class="container" id="featured-container">
             <div class="col-12" id="featured-images">
+                <!-- Cria uma linha -->
                 <div class="row g-4">
+                    <!-- Classe que não limita a tela no mobile mas limita a área da imagem em telas maiores á 3/12 da linha -->
                     <div class="col-12 col-md-3">
-                        <img src="img/morango.JPEG" alt="Projeto 1" class="img-fluid">
+                        <!-- Imagem go produto -->
+                        <img src="img/morango.JPEG" alt="Morango" class="img-fluid">
                         <div class="banner-content">
+                            <!-- Imformações do produto -->
                             <h1>Morango</h1>
                             <h4>R$7,99 p/ bandeja (250g)</h4>
                             <br>
@@ -156,7 +173,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
-                        <img src="img/melancia.JPEG" alt="Projeto 1" class="img-fluid">
+                        <img src="img/melancia.JPEG" alt="Melancia" class="img-fluid">
                         <div class="banner-content">
                             <h1>Melancia</h1>
                             <h4>R$1,49 p/ Kg </h4>
@@ -166,7 +183,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
-                        <img src="img/banana.JPEG" alt="Projeto 1" class="img-fluid">
+                        <img src="img/banana.JPEG" alt="Banana" class="img-fluid">
                         <div class="banner-content">
                             <h1>Banana-</h1>
                             <h1>da-terra</h1>
@@ -177,7 +194,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
-                        <img src="img/uva.JPEG" alt="Projeto 1" class="img-fluid">
+                        <img src="img/uva.JPEG" alt="Uva" class="img-fluid">
                         <div class="banner-content">
                             <h1>Uva</h1>
                             <h4>R$7,47 p/ bandeja (500g)</h4>
@@ -188,7 +205,7 @@
                     </div>
 
                     <div class="col-12 col-md-3">
-                        <img src="img/batata.JPEG" alt="Projeto 1" class="img-fluid">
+                        <img src="img/batata.JPEG" alt="Batata" class="img-fluid">
                         <div class="banner-content">
                             <h1>Batata</h1>
                             <h4>R$3,99 p/ Kg</h4>
@@ -198,7 +215,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
-                        <img src="img/berinjela.JPEG" alt="Projeto 1" class="img-fluid">
+                        <img src="img/berinjela.JPEG" alt="Berinjela" class="img-fluid">
                         <div class="banner-content">
                             <h1>Berinjela</h1>
                             <h4>R$11,99 p/ Kg</h4>
@@ -208,7 +225,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
-                        <img src="img/abobrinha.JPEG" alt="Projeto 1" class="img-fluid">
+                        <img src="img/abobrinha.JPEG" alt="Abobrinha" class="img-fluid">
                         <div class="banner-content">
                             <h1>Abobrinha</h1>
                             <h4>R$3,50 p/ Kg</h4>
@@ -218,7 +235,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
-                        <img src="img/alface.JPEG" alt="Projeto 1" class="img-fluid">
+                        <img src="img/alface.JPEG" alt="Alface" class="img-fluid">
                         <div class="banner-content">
                             <h1>Alface</h1>
                             <h4>R$0,98 p/ pé</h4>
@@ -229,7 +246,7 @@
                     </div>
 
                     <div class="col-12 col-md-3">
-                        <img src="img/couveflor.JPEG" alt="Projeto 1" class="img-fluid">
+                        <img src="img/couveflor.JPEG" alt="Couve-flor" class="img-fluid">
                         <div class="banner-content">
                             <h1>Couve flor</h1>
                             <h4>R$5,48 p/ pé</h4>
@@ -239,7 +256,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
-                        <img src="img/feijao.JPEG" alt="Projeto 1" class="img-fluid">
+                        <img src="img/feijao.JPEG" alt="Feijão" class="img-fluid">
                         <div class="banner-content">
                             <h1>Feijão</h1>
                             <h4>R$7,45 p/ pacote (1Kg)</h4>
@@ -249,7 +266,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
-                        <img src="img/arroz.JPEG" alt="Projeto 1" class="img-fluid">
+                        <img src="img/arroz.JPEG" alt="Arroz" class="img-fluid">
                         <div class="banner-content">
                             <h1>Arroz</h1>
                             <h4>R$20,31 p/ pacote (5Kg)</h4>
@@ -259,7 +276,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
-                        <img src="img/macarrao.JPEG" alt="Projeto 1" class="img-fluid">
+                        <img src="img/macarrao.JPEG" alt="Macarrão" class="img-fluid">
                         <div class="banner-content">
                             <h1>Macarrão</h1>
                             <h4>R$2,48 p/ pacote (500g)</h4>
