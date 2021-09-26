@@ -65,9 +65,8 @@
                                     <form class="col-md-12 d-flex align-items-center  barra-de-pesquisa">
                                         <input class="form-control me-2" type="search" placeholder="Pesquisar"
                                             aria-label="Search">
-                                            <!-- Botão e icon de pesquisar -->
+                                        <!-- Botão e icon de pesquisar -->
                                         <button class="btn btn-outline-success" type="submit"><i
-                                                
                                                 class="bi bi-search"></i></button>
                                     </form>
                                 </li>
@@ -95,16 +94,19 @@
     <!-- INFO -->
     <!-- EXPLICAÇÕES DAS ASSINATURAS -->
     <div class="conteiner primeira-cor conteiner-assinatura">
-
+        <!-- Cria linha, para ser dividida em colunas, centralizada -->
+        <!--Título-->
         <div class="row justify-content-center  ">
             <div class="col 12 col-md-10 fundo-amarelo ">
                 <h2 class="titulo">Entenda melhor nossa proposta de assinatura!</h2>
             </div>
         </div>
+
+        <!--Descrição da assinatura-->
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 fundo-amarelo tipos-de-assinatura">
                 <p>Todos nós, em algum momento da vida, já passamos por aquela situação que precisamos fazer uma compra
-                    rápida, mas até conseguirmos ir até o mercado, procurar os produtos, esperar a fila do caixa para
+                    rápida, mas até conseguirmos ir ao mercado, procurar os produtos, esperar a fila do caixa para
                     pagar... uma eternidade já passou, certo?</p>
                 <p> Isso pode ser ainda pior quando nem se quer encontramos o produto que estavamos desejamos. Um tempo
                     gasto que não volta, viagem perdida...</p>
@@ -134,6 +136,7 @@
                     prontinhas esperando por você!***</p>
             </div>
         </div>
+        <!--Observações-->
         <div class="row justify-content-center explicacoes">
             <div class="col-12 col-md-10 fundo-amarelo">
                 <p>*Nem todas as funcionalidades estão disponíveis ainda, aguarde por próximas atualizações</p>
@@ -148,9 +151,11 @@
     <div class="conteiner " id="conteiner-tipos-de-assinatura">
         <div class="row justify-content-center">
             <div class="col-12 col-md-4 imagem-assinatura">
+                <!-- Imagem do produto -->
                 <img src="img/folder_assinatura.jpg" alt="Informações da empresa">
             </div>
 
+            <!-- Informações sobre a assinatura -->
             <div class="col-12 col-md-6">
                 <div class="row row-tipos-assinatura">
                     <div class="col-12 fundo-amarelo">
@@ -223,6 +228,7 @@
                             </li>
                         </ul>
 
+                        <!--Botão para criar conta-->
                         <div class="col-12 centralizar">
                             <button class="btn btn-outline-success" type="button">
                                 <a href="cadastro.html" class="nav-link primary-color" aria-current="page">
@@ -231,6 +237,7 @@
                             </button>
                         </div>
 
+                        <!--Observações-->
                         <div class="row justify-content-center explicacoes">
                             <div class="col-12 col-md-10 fundo-amarelo">
                                 <p>*Nem todas as funcionalidades estão disponíveis ainda, aguarde por próximas
@@ -245,7 +252,7 @@
         </div>
     </div>
 
-    <!-- CATEGORIAS DE PRODUTO -->
+    <!-- Banner promoção -->
     <div class="container" id="featured-container">
         <div id="featured-images">
             <div class="col-12">
@@ -265,31 +272,36 @@
     <footer class="container-fluid segundo-fundo" id="rodape">
         <div class="row">
             <div class="col-12">
-                <!-- PARTE DE BAIXO DO RODAPÉ -->
                 <div class="row">
                     <div class="col-12" id="rodape-cima">
                         <div class="row">
+                            <!--Coluna com formulário para ficar por dentro das novidades-->
                             <div class="col-12 col-md-4 coluna-rodape-cima">
                                 <h4>Fique por dentro das novidades</h4>
                                 <p>Inscreva-se para saber em primeira mão</p>
+                                <!--Cria um formulário-->
                                 <form>
                                     <div class="mb-3">
                                         <input type="email" class="form-control" placeholder="Digite o seu e-mail">
                                     </div>
-                                    <button class="btn btn-dark" type="submit">Inscrever</button>
+                                    <button class="btn btn-dark" type="submit">Inscrever-se</button>
                                 </form>
                             </div>
+
+                            <!--Coluna das formas de contato-->
                             <div class="col-12 col-md-4 coluna-rodape-cima" id="rodape-cima-centro">
                                 <h4>Formas de contato</h4>
                                 <p> (xx)xxxx-xxxx</p>
                                 <p> contato@mercadinhx.com</p>
                                 <a href="fale_conosco.html">Fale conosco</a>
                             </div>
+
+                            <!--Coluna de colaboradores-->
                             <div class="col-12 col-md-4 coluna-rodape-cima">
                                 <div class="row">
                                     <h4>Colaboradores <i class="bi bi-heart"></i> :</h4>
-
                                     <div class="col-12">
+                                        <!--Cria uma lista-->
                                         <ul class="list-unstyled">
                                             <li>
                                                 <p>Bruno Pereira Fornaro</p>
@@ -310,9 +322,11 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- PARTE DE BAIXO DO RODAPÉ -->
                 <div class="row justify-content-around" id="rodape-baixo">
                     <div class="col-12 col-md-3">
+                        <!--Logos de redes sociais (não são ativos)-->
                         <i class="bi bi-facebook"></i>
                         <i class="bi bi-instagram"></i>
                         <i class="bi bi-twitter"></i>
@@ -323,6 +337,7 @@
                     </div>
                     <div class="col-12 col-md-3">
                         <p>
+                            <!-- Link que direciona para a página "Quem somos" -->
                             <a href="Quem_somos.html">Quem somos</a>
                         </p>
                     </div>
@@ -330,4 +345,5 @@
             </div>
         </div>
     </footer>
+    </div>
 </body>
