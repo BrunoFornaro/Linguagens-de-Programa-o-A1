@@ -276,7 +276,7 @@
 
 
 
-/* SLIDER  HOME (INDEX) */
+/* HOME (INDEX) */
 #slider 
     margin-bottom: 1em // Margem inferior do slider
 
@@ -296,13 +296,9 @@
     @include parcial_sass.imagem-centalizada-com-margem($proporcao-imagem: 90) // Tamanho e margem das imagens do slider
 
 .btn-outline-success
-  border-radius:15px // Raio da borda do botão da classe btn-outline-success (botão verde)
-
-.btn-outline-success
-  h3, h1 // Cor e alinhamento do texto do botão da classe btn-outline-success (botão verde)
-    color: parcial_sass.$preto
-    text-align: center
-
+  border-radius:15px // Raio da borda e cor do texto do botão da classe btn-outline-success (botão verde)
+  background-color: parcial_sass.$branco
+  color: parcial_sass.$preto
 
 
 /* LISTA DE PRODUTOS */
@@ -317,9 +313,10 @@
     background-color: parcial_sass.$amarelo
 
 .lista-de-produtos 
-  .btn-outline-success // Raio da borda e margem inferior do botão da classe btn-outline-success (botão verde) 
-    border-radius:15px 
+  .btn-outline-success // Margem inferior e tamanho da fonte do botão da classe btn-outline-success (botão verde) na lista de produtos 
     margin-bottom: 1em
+    font-size: 2em
+    font-weight: 600
 
 .navbar-filtro // Cor do texto, margem superior, cor de fundo e raio da borda da barra de filtro na página de produtos
   color: parcial_sass.$preto
@@ -359,3 +356,15 @@
 .informacoes-produto 
   .col-md-10 // Padding inferior da área de informações da página de produtos
     padding-bottom: 2em
+
+.fundo-amarelo
+  .btn-outline-success // Cor de fundo e tamanho do texto do botão do tipo btn-outline-sucess no fundo amarelo
+    background-color: parcial_sass.$amarelo
+    font-size: 1.3em
+    margin-bottom: 1em
+  
+  .btn-outline-success:hover // Cor de fundo, opacidade e tamanho do texto ao passar por cima do botão do tipo btn-outline-sucess no fundo amarelo
+    background-color: green
+    opacity: 0.9
+    color: parcial_sass.$preto
+    

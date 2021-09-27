@@ -324,7 +324,7 @@ body {
   padding-right: 0em;
 }
 
-/* SLIDER  HOME (INDEX) */
+/* HOME (INDEX) */
 #slider {
   margin-bottom: 1em;
 }
@@ -352,11 +352,8 @@ body {
 
 .btn-outline-success {
   border-radius: 15px;
-}
-
-.btn-outline-success h3, .btn-outline-success h1 {
+  background-color: white;
   color: black;
-  text-align: center;
 }
 
 /* LISTA DE PRODUTOS */
@@ -371,8 +368,9 @@ body {
 }
 
 .lista-de-produtos .btn-outline-success {
-  border-radius: 15px;
   margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 600;
 }
 
 .navbar-filtro {
@@ -410,6 +408,17 @@ body {
 
 .informacoes-produto .col-md-10 {
   padding-bottom: 2em;
+}
+
+.fundo-amarelo .btn-outline-success {
+  background-color: #FFDB4F;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+.fundo-amarelo .btn-outline-success:hover {
+  background-color: green;
+  opacity: 0.9;
+  color: black;
 }
 
 /*# sourceMappingURL=estilo_com_sass.css.map */
