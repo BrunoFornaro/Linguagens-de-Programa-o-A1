@@ -335,7 +335,14 @@
     margin-bottom: 0
   
   .control-prev, .control-next 
-    background-color: parcial_sass.$amarelo
+    background-color: parcial_sass.$amarelo // Cor dos controles de pagina anterior e próxima página na navbar do filtro na página de lista de produtos
+
+
+@media(min-width: 768px) 
+  #classificar-filtro
+    justify-content: right // Texto alinhado a direita em telas maiores na navbar do filtro da página de lista de produtos
+
+
     
 /* PRODUTOS */
 .imagem-produtos 
