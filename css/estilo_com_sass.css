@@ -38,20 +38,15 @@ body {
   padding: 0em;
 }
 
-.justificar {
-  text-align: justify;
-}
-
 /* EXTEND */
-.imagem-assinatura, #featured-images .banner-content, .centralizar, .imagem-produtos {
+#navbar-items .navbar-nav, .navbar-brand, .imagem-assinatura, #featured-images .banner-content, .centralizar, .imagem-produtos {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#navbar-items .navbar-nav, #navbar-items .nav-item, .navbar-brand, .botao-mensagem-produto {
+#navbar-items .nav-item, .botao-mensagem-produto {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -94,10 +89,6 @@ body {
   margin-left: 0.5em;
 }
 
-.nav-item a {
-  display: flex;
-  justify-content: right;
-}
 .nav-item input {
   border-radius: 30px;
 }
@@ -124,10 +115,6 @@ body {
   margin-bottom: 3em;
 }
 
-#rodape-cima col-12 {
-  border: 0em;
-  margin-bottom: 2em;
-}
 #rodape-cima input {
   border-radius: 0;
   border: none;
@@ -136,11 +123,13 @@ body {
   margin-bottom: 0.3em;
 }
 #rodape-cima h4 {
-  color: white;
   margin-bottom: 1.5em;
 }
 #rodape-cima i {
   color: #FF4009;
+}
+#rodape-cima .coluna-rodape-cima {
+  padding-bottom: 2em;
 }
 
 /* RODAPÉ PARTE DE BAIXO */
@@ -195,8 +184,8 @@ body {
 }
 
 .conteiner-assinatura .col-12 {
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .conteiner-assinatura .titulo {
   text-align: center;
@@ -226,22 +215,25 @@ body {
   width: 100%;
 }
 
-/* BANNER COM TRASPARENCIA */
+@media (min-width: 768px) {
+  .conteiner-assinatura .col-12 {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+/* BANNER COM TRASPARÊNCIA */
 #featured-images {
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
+  text-align: center;
 }
 
-#featured-images .col-md-3 {
+#featured-images .col-md-3, #featured-images .col-12 {
   position: relative;
   cursor: pointer;
 }
 #featured-images .col-md-3:hover > .banner-content {
   opacity: 0.8;
-}
-#featured-images .col-12 {
-  position: relative;
-  cursor: pointer;
 }
 #featured-images .col-12:hover > .banner-content {
   opacity: 0.9;
@@ -320,23 +312,17 @@ body {
   padding-right: 0.5em;
 }
 #quem-somos .img {
-  float: left;
   width: 2em;
   height: 1.5em;
-  object-fit: fill;
 }
 
 #bio-images img {
   width: 100%;
 }
 
-#featured-images {
-  text-align: center;
-  margin-bottom: 4em;
-}
-
-#featured-images img {
-  margin-top: 0.6em;
+.card-body {
+  padding-left: 0em;
+  padding-right: 0em;
 }
 
 /* SLIDER  HOME (INDEX) */
@@ -369,7 +355,7 @@ body {
   border-radius: 15px;
 }
 
-.btn-outline-success h3 {
+.btn-outline-success h3, .btn-outline-success h1 {
   color: black;
   text-align: center;
 }
@@ -389,10 +375,6 @@ body {
   border-radius: 15px;
   margin-bottom: 1em;
 }
-.lista-de-produtos .btn-outline-success h1 {
-  color: black;
-  text-align: center;
-}
 
 .navbar-filtro {
   color: black;
@@ -411,10 +393,6 @@ body {
 }
 
 /* PRODUTOS */
-.imagem-produtos {
-  padding-left: 0;
-}
-
 .imagem-produtos img {
   max-height: 22em;
   max-width: 100%;

@@ -1,7 +1,7 @@
-@use 'parcial_sass'
+@use 'parcial_sass' // Inclui o módulo de SASS "_parcial_sass.sass"
 
 /* CABEÇALHO */
-.cabecalho 
+.cabecalho // Define a cor de fundo, a borda inferior e a margem inferior do cabeçalho
   background-color: parcial_sass.$laranja
   border-bottom: 1px
   border-bottom-style: solid
@@ -10,49 +10,45 @@
 
 .cabecalho
   a
-    color: parcial_sass.$preto
+    color: parcial_sass.$preto // Cor dos links no cabeçalho
   a:hover
-    color: parcial_sass.$gesso
-  a:active 
+    color: parcial_sass.$gesso // Cor ao passar por cima dos links no cabeçalho
+  a:active // Define a cor e borda inferior ao clicar nos links no cabeçalho
     border-bottom: 1px
     border-bottom-style: solid
     border-bottom-color: parcial_sass.$gesso
 
 #navbar-items 
-  .navbar-nav 
-    @extend %centralizar
+  .navbar-nav // Definindo o tamanho e posição das colunas na navbar do cabeçalho
+    @extend %centralizar_item // Usando o centralizador de item
     width: 100%
 
-  .nav-item 
-    @extend %centralizar
+  .nav-item // Definindo o tamanho e posição dos itens do cabeçalho
+    @extend %centralizar // Usando o centralizador
     width: 100%
     font-size: 1.4em
 
-.navbar-brand 
-  @extend %centralizar
+.navbar-brand // Centralizando a imagem e texto com nome do mercado no cabeçalho
+  @extend %centralizar_item
 
 .navbar-brand 
-  img 
+  img // Definindo o tamanho da imagem do cabeçalho
     width: 80px
 
-  span 
+  span // Definindo as características do texto com o nome do mercado do cabeçalho
     font-weight: 700
     font-size: 1.5em
     margin-left: 0.5em
 
 .nav-item 
-  a 
-    display: flex
-    justify-content: right
-  
-  input 
+  input // Definindo o raio da barra de pesquisas (cantos arredondados)
     border-radius: 30px
   
-  button 
-    border: 0
+  button // Borda e cor do texto do botão da barra de pesquisa
+    border: 0 
     color: parcial_sass.$preto
   
-  button:hover
+  button:hover // Cor de fundo do botão e do texto do botão da barra de pesquisa quando se passa por cima
     background-color: parcial_sass.$amarelo
     color: parcial_sass.$preto
 
@@ -60,131 +56,139 @@
 
 /* RODAPÉ */
 #rodape 
-  padding: 3em
+  padding: 3em // Padding do rodapé
 
 #rodape
   a:hover 
-    color: parcial_sass.$amarelo
+    color: parcial_sass.$amarelo // Cor do texto dos links do rodapé ao passar por cima
+
+
 
 /* RODAPÉ PARTE DE CIMA */
-#rodape-cima 
-  margin-bottom: 3em
+#rodape-cima
+  margin-bottom: 3em // Margem da parte de cima do rodapé
 
 #rodape-cima
-  col-12
-    border: 0em
-    margin-bottom: 2em
-
-  input 
+  input // Definindo a borda e tirando os cantos arredondados no campo para inserir o email no rodapé
     border-radius: 0
     border: none
 
   li 
-    margin-bottom: 0.3em
+    margin-bottom: 0.3em // Margem na lista na parte de cima do rodapé
   
   h4 
-    color: white
-    margin-bottom: 1.5em
+    margin-bottom: 1.5em // Margem dos "títulos" no rodapé
   
   i 
-    color: parcial_sass.$vermelho
+    color: parcial_sass.$vermelho // Cor dos icones no rodapé de cima (o coração vermelho)
+
+  .coluna-rodape-cima
+    padding-bottom: 2em // Padding inferior das colunas da parte de cima (para separar em telas menores)
+
+
 
 /* RODAPÉ PARTE DE BAIXO */
-#rodape-baixo 
+#rodape-baixo // Alinhamento do texto, borda superior e padding superior da parte de baixo do rodapé
     text-align: center
     border-top: 1px solid gray
     padding-top: 2em
 
 #rodape-baixo 
   i:hover 
-    color: parcial_sass.$amarelo
+    color: parcial_sass.$amarelo // Cor ao passar por cima dos icones da parte de baixo do rodapé
 
 @media(min-width: 768px) 
   #rodape-cima
     .coluna-rodape-cima
-      @include parcial_sass.padding-lateral-igual($tamanho: 2em)
+      @include parcial_sass.padding-lateral-igual($tamanho: 2em) // Padding das colunas da parte de cima do rodapé em (telas maiores)
       
-  #rodape-cima-centro 
-    @include parcial_sass.padding-lateral-igual($tamanho: 2em)
+  #rodape-cima-centro // Padding e bordas laterais da coluna central da parte de cima do rodapé (em telas maiores)
+    @include parcial_sass.padding-lateral-igual($tamanho: 2em) 
     border-left: 1px solid parcial_sass.$gesso
     border-right: 1px solid parcial_sass.$gesso
     
+
+
 /* ASSINATURA PRO*/
-.fundo-amarelo
+.fundo-amarelo // Classe para o fundo amarelo
   background-color: parcial_sass.$amarelo
 
-.tipos-de-assinatura 
+.tipos-de-assinatura // Tamanho da fonte e alinhamento em tipos de assinatura
   font-size: 1.2em
   text-align: justify
 
-.explicacoes 
+.explicacoes // Tamanho da fonte e alinhamento das explicações ("letras miudas")
   font-size: 0.8em
   text-align: center
 
 .explicacoes 
   .col-md-10 
-    padding-top: 1em
+    padding-top: 1em // Padding para as colunas (tamanho 10 em telas maiores) das explicações
   
-  .col-12 
+  .col-12 // Padding para as colunas (tamanho 12) das explicações
     padding-top: 1em
-    padding-bottom: 2.5em
+    padding-bottom: 2.5em 
 
 .conteiner-assinatura 
-    margin-bottom: 1em
+    margin-bottom: 1em // Margem do conteiner de assinatura pro
 
 
 .conteiner-assinatura 
-  .col-12 
-    @include parcial_sass.padding-lateral-igual($tamanho: 5em)
+  .col-12
+    @include parcial_sass.padding-lateral-igual($tamanho: 2em) // Padding lateral das colunas do conteiner de assinatura pro
 
-  .titulo 
+  .titulo // Tamanho e alinhamento da fonte e padding inferior no título do conteiner de assinatura pro
     text-align: center
     padding-top: 1.5em
     padding-bottom: 0.5em
 
 .row-tipos-assinatura
   .col-12
-      @include parcial_sass.padding-lateral-igual($tamanho: 2em)
+      @include parcial_sass.padding-lateral-igual($tamanho: 2em) // Padding lateral das colunas no campo com os tipos de assinatura
 
 .row-tipos-assinatura
-  .titulo
+  .titulo // Tamanho do título e pedding inferior no titulo no campo com os tipos de assinatura
     padding-top: 1em
     padding-bottom: 0.5em
 
 #conteiner-tipos-de-assinatura
-  margin-bottom: 1em
+  margin-bottom: 1em // Margem inferior do conteiner de assinatura
 
-.imagem-assinatura
+.imagem-assinatura // Padding esquerdo e centralização vertical da imagem da assinatura
   padding-left: 0
-  @extend %centralizar_item
+  @extend %centralizar_item 
 
-.imagem-assinatura
+.imagem-assinatura 
   img
-    width: 100%
+    width: 100% // Tamanho da imagem na página de assinatura pro (o folder)
 
-/* BANNER COM TRASPARENCIA */
+@media(min-width: 768px) 
+  .conteiner-assinatura 
+    .col-12
+      @include parcial_sass.padding-lateral-igual($tamanho: 5em) // Padding lateral das colunas (tamanho 12) no container de assinatura em telas maiores
 
-#featured-images     
+
+
+/* BANNER COM TRASPARÊNCIA */
+// As imagens com sobreposição de banner são aquela que ao passar por cima é exibido um banner com trasparência com botões e/ou texto
+#featured-images // Margem superior e inferior dos imagens com sobreposição de banner 
     margin-top: 1em
-    margin-bottom: 1em
+    margin-bottom: 4em
+    text-align: center // Esse alinhamento de texto irá servvir para a página de quem somos, com os cards com os colaboradores
 
 #featured-images 
-  .col-md-3 
+  .col-md-3, .col-12 // Posição e tipo do ponteiro ao passar por cima das imagens com sobreposição de banner
     position: relative
     cursor: pointer
 
   .col-md-3:hover > .banner-content 
-    opacity: 0.8
-
-  .col-12 
-    position: relative
-    cursor: pointer
+    opacity: 0.8 // Opacidade do banner de coluna 3 (tela maior)
 
   .col-12:hover > .banner-content 
-    opacity: 0.9
+    opacity: 0.9 // Opacidade do banner de coluna 12
 
-  .banner-content 
-    position: absolute
+  .banner-content // Posição, tamanho, alinhamento, cor de fundo, opacidade e tempo de transição do banner que sobrepõe a imagem
+    position: absolute 
     top: 0
     left: 0
     height: 100%
@@ -195,150 +199,137 @@
     opacity: 0.6
     transition: 0.5s
 
-  .banner-content
+  .banner-content 
     a
-      color: parcial_sass.$gesso
+      color: parcial_sass.$gesso // Cor do link no banner
 
     a:hover
-      color: parcial_sass.$amarelo
+      color: parcial_sass.$amarelo // Cor do link no banner ao passar por cima
 
   img 
-    width: 100%
+    width: 100% // Tamanho da imagem com sobreposição de banner
 
 
 @media(min-width: 768px) 
   #featured-images .banner-content 
-      opacity: 0
+      opacity: 0 // Opacidade padrão do banner em telas maiores
 
 
 
 /* LOGIN */
-.botao_laranja 
+.botao_laranja // Define um botão laranja - Borda, tamanho, cor de fundo, estilo do texto e borda
   border:none
   outline: none
   height: 50px
   width: 350px
   background-color: parcial_sass.$laranja
-  color:white
   border-radius: 4px
   font-weight: bold
 
-.botao_laranja:hover 
+.botao_laranja:hover // Cor de fundo, borda e cor do texto ao passar por cima do botão laranja
   background: parcial_sass.$branco
   border: 1px solid
   color: parcial_sass.$vermelho
 
-.imagem_login 
+.imagem_login // Tamanho da imagem do logo na página de login
   width: 12%
   height: 12%
 
-.centralizar 
+.centralizar // Classe para centralizar os itens
   @extend %centralizar_item
 
-#termos
-  font-size: 0.8em
+#termos 
+  font-size: 0.8em // Tamanho do texto em termos
 
 #fale-conosco
-  margin-bottom: 4em
+  margin-bottom: 4em // Margem inferior do botão em fale conosco
 
 #fale-conosco 
   h6
-    text-align: justify
+    text-align: justify // Alinhamento do texto em fale conosco
 
 
 
 /* QUEM SOMOS */
 #quem-somos 
-  h2 
-    text-decoration: underline
-    text-decoration-color: parcial_sass.$laranja
-    margin-bottom: 0.5em
-    @include parcial_sass.padding-lateral-igual
+  h2 // Título da página de quem somos - Sublinhado, cor do sublinhado, margem inferior e padding lateral
+    text-decoration: underline 
+    text-decoration-color: parcial_sass.$laranja 
+    margin-bottom: 0.5em 
+    @include parcial_sass.padding-lateral-igual 
 
-  p 
-    margin-top: 1em
+  p //  Margem superior, alinhamento do texto e padding lateral do texto em quem somos
+    margin-top: 1em 
     text-align: justify
     text-justify: auto
     @include parcial_sass.padding-lateral-igual($tamanho: 0.5em)
  
-  .img 
-    float: left
+  .img // Tamanho da imagem em quem somos (a direita do texto)
     width: 2em
     height: 1.5em
-    object-fit: fill
 
 #bio-images 
-  img 
+  img // Tamanho da imagem dos colaboradores
     width: 100%
 
-#featured-images
-  text-align: center
-  margin-bottom: 4em
-
-#featured-images
-  img
-    margin-top: 0.6em
+.card-body
+  @include parcial_sass.padding-lateral-igual($tamanho: 0em) // Padding lateral do local onde está o nome dos colaboradores
 
 
 
 /* SLIDER  HOME (INDEX) */
 #slider 
-    margin-bottom: 1em
+    margin-bottom: 1em // Margem inferior do slider
 
-.carousel-control-prev i
+.carousel-control-prev i // Cor e tamanho do icone de voltar slide no slider
     color: parcial_sass.$preto
     font-size: 4em
 
-.carousel-control-next i 
+.carousel-control-next i // Cor e tamanho do icone de avançar slide no slider
     color: parcial_sass.$preto
     font-size: 4em
 
-.carousel-indicators [data-bs-target] 
+.carousel-indicators [data-bs-target] // Cor e opacidade dos botões inferiores do slider
     background-color: parcial_sass.$preto
     opacity: 0.8
 
 .carousel-item img 
-    @include parcial_sass.imagem-centalizada-com-margem($proporcao-imagem: 90)
+    @include parcial_sass.imagem-centalizada-com-margem($proporcao-imagem: 90) // Tamanho e margem das imagens do slider
 
 .btn-outline-success
-  border-radius:15px
+  border-radius:15px // Raio da borda do botão da classe btn-outline-success (botão verde)
 
 .btn-outline-success
-  h3
+  h3, h1 // Cor e alinhamento do texto do botão da classe btn-outline-success (botão verde)
     color: parcial_sass.$preto
     text-align: center
 
 
 
-
 /* LISTA DE PRODUTOS */
 .navbar-produtos 
-  .nav-link 
+  .nav-link // Borda e cor do texto na barra de filtro na página de produtos
     border: 1px solid black
     border-radius: 7px
     color: parcial_sass.$preto
   
-.navbar-produtos .nav-link:hover
-  background-color: parcial_sass.$amarelo
+.navbar-produtos 
+  .nav-link:hover // Cor de fundo ao passar por cima dos botões na barra de filtro na página de produtos
+    background-color: parcial_sass.$amarelo
 
-.lista-de-produtos
-  .btn-outline-success
-    border-radius:15px
+.lista-de-produtos 
+  .btn-outline-success // Raio da borda e margem inferior do botão da classe btn-outline-success (botão verde) 
+    border-radius:15px 
     margin-bottom: 1em
 
-  .btn-outline-success
-    h1
-      color: parcial_sass.$preto
-      text-align: center
-
-.navbar-filtro
+.navbar-filtro // Cor do texto, margem superior, cor de fundo e raio da borda da barra de filtro na página de produtos
   color: parcial_sass.$preto
   margin-top: 1em
   background-color: parcial_sass.$laranja
   border-radius: 15px
     
 .navbar-filtro
-  h4
+  h4 // Alinhamento do texto e margem inferior da barra de filtro na página de produtos
     text-align: right
     vertical-align: middle
     margin-bottom: 0
@@ -347,31 +338,25 @@
     background-color: parcial_sass.$amarelo
     
 /* PRODUTOS */
-.imagem-produtos
-  padding-left: 0
-  @extend %centralizar_item
+.imagem-produtos 
+  @extend %centralizar_item // Centralizando a imagem na página de produtos
 
 .imagem-produtos
-  img
+  img // Tamanho e borda da imagem na página de produtos
     max-height: 22em
     max-width: 100%
     border: 1px solid parcial_sass.$laranja
 
 .titulo-mensagem-produto
-  .col-11
+  .col-11 // Padding superior e inferior da coluna do título da área de mensagem na página de produtos
     padding-top: 2em
     padding-bottom: 1em
 
-.botao-mensagem-produto
+.botao-mensagem-produto // Centralização, margem inferior e margem superior do botão na página de produtos
   @extend %centralizar
   margin-top: 1em
   margin-bottom: 2em
 
-.informacoes-produto
-  .col-md-10
+.informacoes-produto 
+  .col-md-10 // Padding inferior da área de informações da página de produtos
     padding-bottom: 2em
-
-
-
-
-
