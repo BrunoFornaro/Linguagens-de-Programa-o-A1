@@ -23,6 +23,7 @@ Hospedamos o site no Netlify pois o W3Space não permite colocar pastas. Link pa
 
 - Há somente uma categoria de produtos funcionando, chamada alimentos. As outras categorias (padaria, açougue e produtos de limpeza), que levam também à página da categoria de alimentos, serão atualizadas posteriormente, quando deixarem de ser estáticas.
 - Em relação aos produtos, somento o morango está especificado em uma página. As outras mercadorias, que levam também à página do morango, serão atualizadas posteriormente, quando deixarem de ser estáticas.
+- Os arquivos (.html e .css) foram todos validados no W3C Markup Validator.
 
 ## Bibliografia
 
