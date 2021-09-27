@@ -8,7 +8,7 @@ O [Mercadinhx](https://mercadinhx.netlify.app/) é um site que visa a conexão e
 Além disso, conta com uma assinatura premium que permite ao cliente selecionar os produtos que deseja, pagar pelo próprio site e apenas ir buscar no mercado sua cesta de produtos pronta.
 
 
-Hospedamos o site no Netlify pois o W3Schools não permite colocar pastas. Link para o site: https://mercadinhx.netlify.app/.
+Hospedamos o site no Netlify pois o W3Space não permite colocar pastas. Link para o site: https://mercadinhx.netlify.app/.
 
 
 
