@@ -14,6 +14,11 @@ Além disso, conta com uma assinatura premium que permite ao cliente selecionar 
 - Lorenzo Aguiar de Alencastro Guimarães - B44407
 - Vanessa Berwanger Wille - B43918
 
+## Observações
+
+- Há somente uma categoria de produtos funcionando, chamada alimentos. As outras categorias (padaria, açougue e produtos de limpeza), que levam também à página da categoria de alimentos, serão atualizadas posteriormente, quando deixarem de ser estáticas.
+- Em relação aos produtos, somento o morango está especificado em uma página. As outras mercadorias, que levam também à página do morango, serão atualizadas posteriormente, quando deixarem de ser estáticas.
+
 ## Bibliografia
 
 Links que nos auxiliaram na construção do site:
