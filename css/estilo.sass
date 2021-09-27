@@ -51,6 +51,10 @@
     background-color: parcial_sass.$amarelo
     color: parcial_sass.$preto
 
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus // Removendo a borda do botão da navbar do cabeçalho (em telas menores)
+    outline: none
+    box-shadow: none
+
 
 
 /* RODAPÉ */
@@ -216,7 +220,7 @@
 
 
 /* LOGIN */
-.botao_laranja // Define um botão laranja - Borda, tamanho, cor de fundo, estilo do texto e borda
+.botao-laranja // Define um botão laranja - Borda, tamanho, cor de fundo, estilo do texto e borda
   border:none
   outline: none
   height: 50px
@@ -225,12 +229,12 @@
   border-radius: 4px
   font-weight: bold
 
-.botao_laranja:hover // Cor de fundo, borda e cor do texto ao passar por cima do botão laranja
+.botao-laranja:hover // Cor de fundo, borda e cor do texto ao passar por cima do botão laranja
   background: parcial_sass.$branco
   border: 1px solid
   color: parcial_sass.$vermelho
 
-.imagem_login // Tamanho da imagem do logo na página de login
+.imagem-login // Tamanho da imagem do logo na página de login
   width: 12%
   height: 12%
 

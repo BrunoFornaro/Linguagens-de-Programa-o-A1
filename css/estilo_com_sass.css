@@ -100,6 +100,11 @@ body {
   color: black;
 }
 
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 /* RODAPÉ */
 #rodape {
   padding: 3em;
@@ -264,7 +269,7 @@ body {
   }
 }
 /* LOGIN */
-.botao_laranja {
+.botao-laranja {
   outline: none;
   height: 50px;
   width: 350px;
@@ -272,13 +277,13 @@ body {
   border-radius: 4px;
   font-weight: bold;
 }
-.botao_laranja:hover {
+.botao-laranja:hover {
   background: white;
   border: 1px solid;
   color: #FF4009;
 }
 
-.imagem_login {
+.imagem-login {
   width: 12%;
   height: 12%;
 }
