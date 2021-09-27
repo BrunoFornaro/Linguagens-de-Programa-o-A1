@@ -11,13 +11,10 @@
     <!-- GOOGLE FONTS OPEN SANS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -26,9 +23,7 @@
     <link rel="stylesheet" href="css/estilo_com_sass.css" />
 
     <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
 </head>
 
@@ -52,31 +47,40 @@
                 <!-- Limita a 8 colunas das colunas restantes -->
                 <div class="col-12 col-md-8">
                     <!-- Botão que só aparece no mobile que mostra as opções de navegação quando acionado -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
                         <!-- Icon de lista -->
                         <i class="bi bi-list"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbar-items">
-                        <div class="col-12 col-md-6 nav-item">
-                            <form class="col-md-12 d-flex align-items-center  barra-de-pesquisa">
-                                <input class="form-control me-2" type="search" placeholder="Pesquisar"
-                                    aria-label="Search">
-                                <!-- Botão e icon de pesquisar -->
-                                <button class="btn btn-outline-success" type="submit"><i
-                                        class="bi bi-search"></i></button>
-                            </form>
-                        </div>
-                        <div class="col-12 col-md-3 nav-item">
-                            <!-- Link para assinatura pró -->
-                            <a href="assinatura_pro.html" class="nav-link primeira-cor" aria-current="page">Seja
-                                Assinante</a>
-                        </div>
-                        <div class="col-12 col-md-3 nav-item">
-                            <!-- Link para login -->
-                            <a href="login.html" class="nav-link primeira-cor" aria-current="page">Login</a>
-                        </div>
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item ">
+                                <div class="col-12 ">
+                                    <form class="col-md-12 d-flex align-items-center  barra-de-pesquisa">
+                                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                                        <!-- Botão e icon de pesquisar -->
+                                        <button class="btn btn-outline-success" type="submit"><i
+                                                class="bi bi-search"></i></button>
+                                    </form>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="col-md-10 ">
+                                    <!-- Link para assinatura pró -->
+                                    <a href="assinatura_pro.html" class="nav-link primeira-cor" aria-current="page">Seja
+                                        Assinante</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="col-md-2 ">
+                                    <!-- Link para login -->
+                                    <a href="login.html" class="nav-link primeira-cor" aria-current="page">Login</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -91,7 +95,6 @@
                 <!-- Imagem do produto -->
                 <figure>
                     <img src="img/morango.JPEG" alt="Informações do produto">
-                    <figcaption>Imagem meramente ilustrativa</figcaption>
                 </figure>
             </div>
             <!-- Informações sobre o produto -->
@@ -113,14 +116,13 @@
 
                         <!-- Botão de adicionar ao carrinho que leva para a página de seja assinante -->
                         <div class="col-8">
-                            <button onclick="window.location.href='assinatura_pro.html'">Adicionar ao carinho <i class="bi bi-cart"></i></button>
+                            <button onclick="window.location.href='assinatura_pro.html'" class="btn-outline-success btn-lg"><i class="bi bi-cart"></i> Adicionar ao carrinho*</button>
                         </div>
 
                         <!-- Linha para texto complementar -->
                         <div class="row justify-content-center explicacoes">
                             <div class="col-12 col-md-10 fundo-amarelo">
-                                <p>*Nem todas as funcionalidades estão disponíveis ainda, aguarde por próximas
-                                    atualizações
+                                <p>*Nem todas as funcionalidades estão disponíveis ainda, aguarde por próximas atualizações
                                 </p>
                             </div>
                         </div>
@@ -144,9 +146,7 @@
         <!-- Texto de informações complementares -->
         <div class="row justify-content-center informacoes-produto">
             <div class="col-12 col-md-10 fundo-amarelo tipos-de-assinatura">
-                <p>Os nossos morangos são orgânicos e comprados diretamente do podutor. A produção é feita no município
-                    de Venda Nova do Imgrante, sem a utilização de agrotóxicos visando o bem estar dos clientes e bons
-                    cuidados com a natureza. </p>
+                <p>Os nossos morangos são orgânicos e comprados diretamente do podutor. A produção é feita no município de Venda Nova do Imgrante, sem a utilização de agrotóxicos visando o bem estar dos clientes e bons cuidados com a natureza. </p>
             </div>
         </div>
 
@@ -156,8 +156,7 @@
     <div class="col-12 centralizar">
         <div class="col-12 col-md-10 fundo-amarelo centralizar titulo-mensagem-produto">
             <div class="col-11">
-                <h5>Você possui alguma dúvida sobre o produto? Nos mande ela pelo formulário abaixo, procuramos
-                    responder o mais breve possível.</h5>
+                <h5>Você possui alguma dúvida sobre o produto? Nos mande ela pelo formulário abaixo, procuramos responder o mais breve possível.</h5>
             </div>
         </div>
     </div>
@@ -166,8 +165,7 @@
             <div class="row centralizar">
                 <!-- Área para envio de dúvidas pelo cliente -->
                 <div class="col-11 centralizar">
-                    <textarea placeholder="Mensagem/dúvida" rows="5"
-                        class="form-control md-textarea"></textarea>
+                    <textarea placeholder="Mensagem/dúvida" rows="5" class="form-control md-textarea"></textarea>
                 </div>
             </div>
             <!-- Botão para enviar dúvida -->
@@ -185,8 +183,10 @@
                 <!-- Banner de promoções -->
                 <img src="img/promocao.png" alt="Economize">
                 <div class="banner-content">
-                    <!-- Botão que leva as promoções -->
-                    <button onclick="window.location.href='lista_de_produtos.html'">Vá para promoções</button>
+                    <!-- Link que leva ás promoçoes -->
+                    <a href="lista_de_produtos.html" class="btn btn-dark">
+                        <h3>Veja já as promoções</h3>
+                    </a>
                 </div>
             </div>
         </div>
