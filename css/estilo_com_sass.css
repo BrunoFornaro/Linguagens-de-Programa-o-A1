@@ -394,6 +394,11 @@ body {
   background-color: #FFDB4F;
 }
 
+@media (min-width: 768px) {
+  #classificar-filtro {
+    justify-content: right;
+  }
+}
 /* PRODUTOS */
 .imagem-produtos img {
   max-height: 22em;

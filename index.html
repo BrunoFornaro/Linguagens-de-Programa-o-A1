@@ -54,13 +54,15 @@
                 </div>
                 <!-- Limita a 8 colunas das colunas restantes -->
                 <div class="col-12 col-md-8">
-                    <!-- Botão que só aparece no mobile que mostra as opções de navegação quando acionado -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <!-- Icon de lista -->
-                        <i class="bi bi-list"></i>
-                    </button>
+                    <div class="col-12 centralizar">
+                        <!-- Botão que só aparece no mobile que mostra as opções de navegação quando acionado -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <!-- Icon de lista -->
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
                     <div class="collapse navbar-collapse" id="navbar-items">
                         <div class="col-12 col-md-6 nav-item">
                             <form class="col-md-12 d-flex align-items-center  barra-de-pesquisa">
@@ -133,14 +135,7 @@
                         <!-- Imagem do banner de promoçoes -->
                         <img src="img/promocao.png" alt="Clique para ir">
                         <div class="banner-content">
-                            <!-- Botão que leva a pag de promoções 
-                            <button class="btn btn-dark" type="button">
-                                 Linhk que leva as promoções 
-                                <a href="lista_de_produtos.html" class="nav-link primary-color" aria-current="page">
-                                    Vá para as promoções
-                                </a>
-                            </button>-->
-                            <button onclick="window.location.href='lista_de_produtos.html'" class="btn-outline-success btn-lg">Vá para promoções</button>
+                            <button onclick="window.location.href='lista_de_produtos.html'" class="btn-outline-success btn-lg">Veja já as promoções</button>
                         </div>
                     </div>
                     <!-- No mobile ocupa a tela toda (12/12 colunas) em telas maiores ocupa 3/12 colunas da tela -->
