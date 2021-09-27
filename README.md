@@ -4,8 +4,13 @@ Trabalho realizado para a disciplina de Linguagens de Programação do curso de 
 
 ## O site
 
-O Mercadinhx é um site que visa a conexão entre o consumidor e o mercado, implementando um sistema sólido que permite a visualização da disponibilidade, localização na prateleira e preço das mercadorias. Possibilita-se, assim, um planejamento prévio das compras, proporcionando uma ida mais rápida e econômica ao mercado.
+O [Mercadinhx](https://mercadinhx.netlify.app/) é um site que visa a conexão entre o consumidor e o mercado, implementando um sistema sólido que permite a visualização da disponibilidade, localização na prateleira e preço das mercadorias. Possibilita-se, assim, um planejamento prévio das compras, proporcionando uma ida mais rápida e econômica ao mercado.
 Além disso, conta com uma assinatura premium que permite ao cliente selecionar os produtos que deseja, pagar pelo próprio site e apenas ir buscar no mercado sua cesta de produtos pronta.
+
+
+Hospedamos o site no Netlify pois o W3Schools não permite colocar pastas. Link para o site: https://mercadinhx.netlify.app/.
+
+
 
 ## Integrantes
 
